@@ -1,11 +1,11 @@
 # Preprocessing the data
-
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
+from sklearn.model_selection import train_test_split
 
 class Preprocessing:
     def __init__(self, data):
@@ -29,7 +29,6 @@ class Preprocessing:
         
 
     def split_data(self, test_size):
-        from sklearn.model_selection import train_test_split
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.X, self.y, test_size=test_size, random_state=42)
 
     def scale_data(self):

@@ -5,3 +5,8 @@
 /meta-llama2
 /.venv
 /playground
+/gemma/__pycache__
+/gemma/gemma.cpp
+/gpt.ipynb
+/gpt2.ipynb
+/main-f.py
