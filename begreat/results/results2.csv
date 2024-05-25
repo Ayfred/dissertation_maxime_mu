@@ -1,0 +1,101 @@
+,Disease,Fever,Cough,Fatigue,Difficulty Breathing,Age,Gender,Blood Pressure,Cholesterol Level,Outcome Variable
+0,Osteoporosis,Yes,Yes,Yes,No,35.0,Female,High,High,Negative
+1,Gender,Yes,No,Yes,No,60.0,Male,High,Normal,Positive
+2,Cholesterol Level,No,Yes,Yes,No,40.0,Female,High,High,Positive
+3,Obstructive Pulmonary Hypertension,Yes,No,Yes,No,70.0,Female,High,High,Positive
+4,Hypertension,No,No,No,No,55.0,Male,High,Normal,Negative
+5,Asthma,Yes,Yes,Yes,Yes,35.0,Male,Normal,High,Negative
+6,Musculoskeletal Pain,No,No,No,No,52.0,Female,Normal,Normal,Positive
+7,Erythema,No,No,No,No,35.0,Normal,Normal,High,Negative
+8,Infectious Diseases,Yes,No,Yes,No,43.0,Male,High,Low,Negative
+9,Cough,No,No,Yes,No,45.0,Male,Normal,Normal,Positive
+10,Pulmonary Disease,No,Yes,Yes,No,50.0,Female,Normal,Normal,Positive
+11,Strooporosis,No,No,Yes,No,40.0,Female,High,High,Positive
+12,Diabetes,Yes,No,Yes,No,35.0,Male,High,Normal,Negative
+13,Asthma,Yes,No,No,No,55.0,Male,High,High,Positive
+14,Arthritis,No,Yes,Yes,No,45.0,Male,High,High,Negative
+15,Parkinson's Disease,Yes,Yes,Yes,No,65.0,Male,Normal,Normal,Negative
+16,Alzheimer's Disease,No,Yes,No,No,60.0,Female,High,High,Positive
+17,Stroke,Yes,Yes,No,No,35.0,Male,Normal,High,Negative
+18,Ovarian Cancer,No,No,Yes,No,60.0,Male,High,Normal,Negative
+19,Osteoarthritis,Yes,Yes,Yes,Yes,30.0,Female,High,Normal,Negative
+20,Osteoporosis,Yes,No,Yes,Yes,65.0,Male,Normal,Normal,Negative
+21,Cough Fever,Infectious,No,Yes,Yes,45.0,Female,Normal,High,Negative
+22,Alzheimer's Disease,Yes,No,No,No,45.0,Male,Normal,High,Positive
+23,Stroke,No,No,Yes,No,45.0,Male,Normal,Normal,Positive
+24,Crohn's Disease,Yes,No,No,No,60.0,Male,Normal,High,Positive
+25,Liver Disease,No,Yes,Yes,No,45.0,Male,High,High,Negative
+26,Anxiety Disorders,No,No,No,No,55.0,Male,High,High,Positive
+27,Cough,Yes,Yes,Yes,Yes,30.0,Female,High,High,Negative
+28,Arthritis,Yes,No,Yes,No,45.0,Female,High,High,Positive
+29,Cough,No,Yes,Yes,No,65.0,Female,High,Normal,Positive
+30,Acute Pulmonary Hypertension,No,No,Yes,No,45.0,Female,Normal,High,Negative
+31,Gender Male,Yes,Yes,Yes,Yes,40.0,Female,High,High,Positive
+32,Infective Kidney Cancer,No,No,Yes,No,45.0,Male,Normal,Normal,Positive
+33,Osteoporosis,No,Yes,No,No,35.0,Male,High,Normal,Positive
+34,Pulmonary Disease,No,No,Yes,No,45.0,Male,High,Normal,Positive
+35,High,No,Yes,Yes,No,65.0,Female,High,High,Negative
+36,Crohn's Disease,No,No,No,No,60.0,Female,High,High,Negative
+37,Liver Cancer,No,No,Yes,No,40.0,Male,High,High,Negative
+38,Cancer,Yes,No,Yes,No,45.0,Male,Normal,Normal,Negative
+39,Cancer,Yes,Yes,Yes,No,45.0,Female,Normal,High,Positive
+40,Osteoporosis,No,No,No,No,55.0,Male,Normal,High,Negative
+41,Hypertension,Yes,No,Yes,Yes,50.0,Male,High,High,Positive
+42,Pneumonia,No,No,No,No,40.0,Male,Normal,High,Negative
+43,Osteoporosis,Yes,No,Yes,No,45.0,Male,High,Normal,Positive
+44,Cancer,No,No,No,No,60.0,Male,High,Normal,Negative
+45,Blood Pressure,No,No,Yes,No,42.0,Female,Normal,High,Positive
+46,Fatigue,No,Yes,Yes,No,35.0,Female,Normal,High,Negative
+47,Gastroenteritis,Yes,Yes,No,No,35.0,Male,High,Low,Negative
+48,Stroke,Yes,Yes,Yes,No,45.0,Male,High,Normal,Negative
+49,Hepatitis Cough,Yes,Yes,Yes,No,60.0,Female,High,Normal,Negative
+50,Cough,No,Yes,Yes,No,65.0,Male,Normal,High,Positive
+51,Chronic Obesity,Yes,Yes,Yes,No,40.0,Male,Normal,Normal,Positive
+52,Lymphoma,No,No,No,No,75.0,Female,Normal,High,Positive
+53,Cough,No,No,No,No,45.0,Male,High,High,Negative
+54,Cough,No,No,Yes,Yes,45.0,Female,High,Normal,Positive
+55,Alzheimer's Disease,No,Yes,No,No,50.0,Female,Normal,Normal,Negative
+56,Asthma,No,No,No,No,45.0,Female,High,High,Negative
+57,Cancer,Yes,Yes,Yes,Yes,35.0,Female,High,High,Negative
+58,Osteoporosis,Yes,No,No,No,40.0,Male,Normal,Normal,Positive
+59,Anxiety,No,No,No,No,40.0,Male,Normal,High,Positive
+60,Hepatitis C,No,Yes,Yes,No,50.0,Female,High,High,Negative
+61,Cholesterol Level,Yes,No,No,No,50.0,Male,High,Normal,Positive
+62,Liver Disease,Yes,Yes,No,No,45.0,Female,High,High,Positive
+63,Positive,Yes,Yes,No,Yes,30.0,Male,High,Normal,Positive
+64,Blood Pressure,No,No,No,No,70.0,Male,Normal,Normal,Positive
+65,Asthma,No,Yes,No,Yes,60.0,Female,Normal,Low,Positive
+66,Crohn's Disease,No,Yes,Yes,No,35.0,Male,Normal,High,Positive
+67,Diabetes,No,Yes,No,No,45.0,Male,Normal,Normal,Negative
+68,Crohn's Disease,Yes,Yes,Yes,No,35.0,Male,High,High,Positive
+69,Crohn's Disease,Yes,Yes,Yes,Yes,45.0,Female,High,Normal,Positive
+70,Cholera,Yes,No,Yes,Yes,35.0,Male,Normal,High,Negative
+71,Pneumonia,Yes,Yes,Yes,No,50.0,Male,Normal,High,Negative
+72,Cholesterol Level,Yes,Yes,No,No,55.0,Male,Normal,Normal,Positive
+73,Female,No,Yes,Yes,No,65.0,Male,High,Normal,Positive
+74,Hepatitis C Fever,Yes,No,Yes,No,40.0,Male,High,High,Negative
+75,Cough,No,Yes,No,No,70.0,Female,High,High,Positive
+76,Stroke,Yes,No,No,No,65.0,Male,Normal,High,Positive
+77,Crohn's Disease,Yes,No,No,No,30.0,Female,Normal,High,Positive
+78,Blood Pressure,No,No,Yes,No,35.0,Male,High,Normal,Negative
+79,Asthma,No,No,No,No,70.0,Male,Normal,High,Negative
+80,Hepatitis Bead Disease,No,No,No,Yes,30.0,Male,Normal,Normal,Negative
+81,Kidney Disease,No,No,No,No,55.0,Male,Normal,High,Negative
+82,Pancreatitis,No,No,Yes,No,45.0,Female,Normal,High,Positive
+83,Bronchitis,No,Yes,No,Yes,55.0,Female,Normal,High,Negative
+84,Multiple Psoriasis,Yes,Yes,No,Yes,40.0,Male,Normal,High,Negative
+85,Asthma,Yes,Yes,Yes,No,30.0,Male,High,Normal,Positive
+86,Fever,No,Yes,Yes,No,60.0,Female,Normal,High,Positive
+87,Multiple Sclerosis,Yes,Yes,No,No,29.0,Male,Normal,High,Negative
+88,Arthritis,No,Yes,No,No,35.0,Male,Low,Normal,Positive
+89,Hypertension,No,Yes,Yes,No,70.0,Male,Normal,Normal,Negative
+90,Hypothyroidism,No,No,Yes,No,60.0,Female,High,High,Negative
+91,Stroke,Yes,Yes,Yes,No,38.0,Male,Normal,Normal,Negative
+92,Hepatitis B,No,Yes,Yes,No,45.0,Male,Normal,High,Positive
+93,Fibromyalgia,Yes,Yes,Yes,No,45.0,Female,Normal,High,Positive
+94,Pulmonary Hypertension,No,Yes,No,No,40.0,Male,Normal,Negative,Positive
+95,Stroke,No,Yes,Yes,No,55.0,Male,High,High,Negative
+96,Obstructive Pulmonary Disease,No,Yes,No,No,45.0,Male,High,High,Negative
+97,Pulmonary Hypertension,Yes,No,Yes,No,45.0,Male,Normal,High,Positive
+98,Pulmonary Hypertension,Yes,No,Yes,No,35.0,Female,High,Normal,Negative
+99,Fever,No,No,Yes,No,65.0,Female,Normal,High,Positive

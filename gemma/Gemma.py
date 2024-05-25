@@ -8,11 +8,12 @@ class GemmaModel:
     def __init__(self, command, model):
         self.command = command
         self.model = model
-
+        self.output = ""
         if self.model == MODEL_2B_IT:
             self.args = [
                 "--tokenizer", "./gemma/gemma.cpp/build/tokenizer.spm",
                 "--compressed_weights", "./gemma/gemma.cpp/build/2b-it-sfp.sbs",
+                "--max_tokens", "4000",
                 "--model", "2b-it"
             ]
         elif self.model == MODEL_7B_IT:
@@ -49,6 +50,7 @@ class GemmaModel:
             output = output.split("How are you doing today? Is there anything I can help you with?")[0]
             output = output.split(">")[1].strip()
         
+        self.output = output
         return output
 
     def write_output_to_file(self, output, filename='output.txt'):
@@ -57,4 +59,7 @@ class GemmaModel:
 
     def print_output(self, output):
         print(output)
+
+    def get_output(self):
+        return self.output
 
