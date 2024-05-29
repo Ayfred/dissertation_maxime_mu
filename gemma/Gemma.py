@@ -53,7 +53,7 @@ class GemmaModel:
         self.output = output
         return output
 
-    def write_output_to_file(self, output, filename='output.txt'):
+    def write_output_to_file(self, output, filename='gemma/results/output.txt'):
         with open(filename, 'w') as f:
             f.write(output)
 

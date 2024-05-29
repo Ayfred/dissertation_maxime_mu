@@ -1,7 +1,7 @@
 import csv
 
 # Open the input and output files
-with open('output_main.txt', 'r') as input_file, open('patients.csv', 'w', newline='') as output_file:
+with open('gemma/results/output.txt', 'r') as input_file, open('gemma/results/patients.csv', 'w', newline='') as output_file:
     # Create a CSV writer object
     writer = csv.writer(output_file)
     

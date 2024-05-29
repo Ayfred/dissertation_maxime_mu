@@ -1,12 +1,12 @@
 import gemma.Gemma as Gemma
 import pandas as pd
-import TabularToTextualConverter as TabularToTextualConverter
-import TextualToTabularConverter as TextualToTabularConverter
+import gemma.TabularToTextualConverter as TabularToTextualConverter
+import gemma.TextualToTabularConverter as TextualToTabularConverter
 
 
 MODEL_2B_IT = "2b-it"
 MODEL_7B_IT = "7b-it"
-DATA = "data.csv"
+DATA = "datasets/data.csv"
 
 class Main:
     def __init__(self, model):
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     #main_app = Main(MODEL_2B_IT)
     #main_app.setup()
 
-    output_file = "output_main.txt"
+    output_file = "gemma/results/output.txt"
 
     i = 0
     with open(output_file, "a") as f:  # Open in append mode to avoid overwriting
@@ -72,7 +72,7 @@ if __name__ == "__main__":
                 break
             
     textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter(output_file)
-    textualToTabularConverter.write_to_csv("output.csv")
+    textualToTabularConverter.write_to_csv("gemma/results/synthetic_data_2b_it.csv")
 
     
 

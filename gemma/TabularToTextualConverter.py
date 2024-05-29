@@ -58,7 +58,7 @@ class PatientDataFormatter:
 
 
 if __name__ == "__main__":
-    file_path = "data.csv"
+    file_path = "datasets/data.csv"
     
     formatter = PatientDataFormatter(file_path)
     formatter.read_data()
