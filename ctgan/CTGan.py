@@ -2,7 +2,7 @@ from ctgan import CTGAN
 import pandas as pd
 
 
-data = pd.read_csv('data.csv')    
+data = pd.read_csv('datasets/data.csv')    
 
 # Names of the columns that are discrete
 discrete_columns = [
