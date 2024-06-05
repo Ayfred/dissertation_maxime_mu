@@ -1,12 +1,12 @@
 import Gemma as Gemma
 import pandas as pd
-import gemma.TabularToTextualConverter as TabularToTextualConverter
-import gemma.TextualToTabularConverter as TextualToTabularConverter
+import TabularToTextualConverter as TabularToTextualConverter
+import TextualToTabularConverter as TextualToTabularConverter
 
 
 MODEL_2B_IT = "2b-it"
 MODEL_7B_IT = "7b-it"
-DATA = "datasets/data.csv"
+DATA = "../datasets/data.csv"
 
 class Main:
     def __init__(self, model):

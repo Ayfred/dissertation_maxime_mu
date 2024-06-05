@@ -33,7 +33,7 @@ class GemmaModel:
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
-            text=True
+            #text=True
         )
 
     def run_model(self, input_text):
