@@ -1,4 +1,4 @@
-import gemma.Gemma as Gemma
+import Gemma as Gemma
 import pandas as pd
 import gemma.TabularToTextualConverter as TabularToTextualConverter
 import gemma.TextualToTabularConverter as TextualToTabularConverter
@@ -44,6 +44,9 @@ if __name__ == "__main__":
     output_file = "gemma/results/output.txt"
 
     i = 0
+
+
+    """
     with open(output_file, "a") as f:  # Open in append mode to avoid overwriting
 
         while i < len(subset_data):
@@ -51,9 +54,9 @@ if __name__ == "__main__":
             main_app.setup()
 
 
-            """input_text = "Question: Can you generate more patients based on the following data? \
-                Put it in the following format: Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome] \
-                Data: " + str(subset_data[i]) + "\n"""
+            #input_text = "Question: Can you generate more patients based on the following data? \
+            #    Put it in the following format: Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome] \
+            #    Data: " + str(subset_data[i]) + "\n"
             
             input_text = " Generate additional patient records in the following format:\
                 Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome]\
@@ -70,11 +73,16 @@ if __name__ == "__main__":
 
             if i == 1:
                 break
+    
             
     textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter(output_file)
     textualToTabularConverter.write_to_csv("gemma/results/synthetic_data_2b_it.csv")
 
-    
+    """
 
+    main_app = Main(MODEL_2B_IT)
+    main_app.setup()
+    
+    input_text = " Hi what is your name ?"
 
 

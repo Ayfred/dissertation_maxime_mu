@@ -12,3 +12,5 @@
 /main-f.py
 /gemma/gemma.cpp/build/2b-it-sfp.sbs
 /gemma/gemma.cpp/build/tokenizer.spm
+/gemma/model.tar.gz
+/dissertation-env
