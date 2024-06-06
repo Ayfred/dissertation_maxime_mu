@@ -33,34 +33,25 @@ class GemmaModel:
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
-            #text=True
+            text=True
         )
 
     def run_model(self, input_text):
         if not self.process:
             raise RuntimeError("Process not started. Call start_process() first.")
         
-        self.process.stdin.write(input_text.encode())
-        # Do not close stdin immediately
+        self.process.stdin.write(input_text)
+        self.process.stdin.flush()
+        
+        output, error = self.process.communicate()
 
-        # Remove the call to communicate()
-        # output, error = self.process.communicate()
-
-        # Read the output directly from stdout
-        output = self.process.stdout.read()
-
-        # Close stdin when done writing input
-        self.process.stdin.close()
-
+        print(output)
+        
         if self.model == MODEL_2B_IT:
             # Remove unwanted parts of the output
-            output = output.split(b"How are you doing today? Is there anything I can help you with?")[0]
-            if len(output.split(b">")) > 1:
-                output = output.split(b">")[1].strip()
-            else:
-                # Handle the case when the delimiter is not found
-                output = ""
-
+            output = output.split("How are you doing today? Is there anything I can help you with?")[0]
+            output = output.split(">")[1].strip()
+        
         self.output = output
         return output
 
