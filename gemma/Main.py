@@ -10,7 +10,7 @@ DATA = "../datasets/data.csv"
 
 class Main:
     def __init__(self, model):
-        self.command = "./gemma/gemma.cpp/build/gemma"
+        self.command = "./gemma.cpp/build/gemma"
         self.model = model
         self.gemma_model = None
 
@@ -84,5 +84,8 @@ if __name__ == "__main__":
     main_app.setup()
     
     input_text = " Hi what is your name ?"
+    main_app.run(input_text)
+
+    print(main_app.get_output())
 
 
