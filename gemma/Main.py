@@ -6,11 +6,11 @@ import TextualToTabularConverter as TextualToTabularConverter
 
 MODEL_2B_IT = "2b-it"
 MODEL_7B_IT = "7b-it"
-DATA = "./datasets/data.csv"
+DATA = "../datasets/data.csv"
 
 class Main:
     def __init__(self, model):
-        self.command = "./gemma/gemma.cpp/build/gemma"
+        self.command = "./gemma.cpp/build/gemma"
         self.model = model
         self.gemma_model = None
 
