@@ -22,9 +22,11 @@ class SyntheticDataGeneratorBeGreat:
 
 
     def fit(self):
+        print("Fitting the model to the data...")
         self.model.fit(self.data)
     
     def generate_samples(self):
+        print("Generating synthetic data...")
         synthetic_data = self.model.sample(n_samples=self.n_samples)
         return synthetic_data
     

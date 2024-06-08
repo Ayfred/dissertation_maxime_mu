@@ -5,3 +5,4 @@ ctgan
 matplotlib
 torch
 configparser
+be_great
