@@ -42,7 +42,7 @@ def main(
     data = config['dataset']['dataset_dir']
 
     print("Formatting patient data...")
-    patient_data_formatter = TabularToTextualConverter.PatientDataFormatter(data)
+    patient_data_formatter = TabularToTextualConverter.TabularToTextualConverter(data)
     patient_data_formatter.read_data()
     patient_data_formatter.transform_rows()
     #combined_string = patient_data_formatter.get_combined_string()
@@ -65,8 +65,8 @@ def main(
         print("Generating patient records...")
         dialogs: List[Dialog] = [
             [{"role": "user", "content": input_text +  str(subset_data[i])}],
-            
         ]
+
         results = generator.chat_completion(
             dialogs,
             max_gen_len=max_gen_len,
@@ -88,6 +88,7 @@ def main(
         results_txt = config['llama-3-8b']['input_file']
 
         # Store the results in a txt file
+        print("Storing the results in txt file...")
         with open(results_txt, 'a') as f:
             for dialog, result in zip(dialogs, results):
                 for msg in dialog:

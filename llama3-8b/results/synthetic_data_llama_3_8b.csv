@@ -39,3 +39,23 @@ Hyperthyroidism,No,No,Yes,No,35,Female,Normal,Normal,Negative
 Irritable Bowel Syndrome,No,No,Yes,No,28,Female,Normal,Normal,Negative
 Ulcerative Colitis,Yes,No,Yes,No,32,Male,Normal,Normal,Positive
 Chronic Obstructive Pulmonary Disease,No,Yes,Yes,Yes,65,Male,Normal,Normal,Positive
+Influenza,Yes,No,Yes,Yes,19,Female,Low,Normal,Positive
+Common Cold,No,Yes,Yes,No,25,Female,Normal,Normal,Negative
+Eczema,No,Yes,Yes,No,25,Female,Normal,Normal,Negative
+Asthma,Yes,Yes,No,Yes,25,Male,Normal,Normal,Positive
+Asthma,Yes,Yes,No,Yes,25,Male,Normal,Normal,Positive
+Pneumonia,Yes,Yes,Yes,Yes,45,Male,High,High,Positive
+Allergic Rhinitis,No,Yes,No,No,30,Female,Normal,Normal,Negative
+Tuberculosis,Yes,Yes,Yes,Yes,28,Male,Normal,Normal,Positive
+Sinusitis,Yes,Yes,Yes,No,22,Female,Normal,Normal,Positive
+Bronchitis,Yes,Yes,Yes,Yes,40,Male,Normal,Normal,Positive
+Laryngitis,No,Yes,Yes,No,35,Female,Normal,Normal,Negative
+Psoriasis,No,No,Yes,No,38,Male,Normal,Normal,Negative
+Gastroenteritis,Yes,No,Yes,No,29,Female,Normal,Normal,Positive
+Meningitis,Yes,No,Yes,Yes,18,Male,High,Normal,Positive
+Pneumothorax,No,Yes,No,Yes,42,Male,Normal,Normal,Positive
+Hypothyroidism,No,No,Yes,No,50,Female,Normal,Normal,Negative
+Hyperthyroidism,No,No,Yes,No,35,Female,Normal,Normal,Negative
+Irritable Bowel Syndrome,No,No,Yes,No,28,Female,Normal,Normal,Negative
+Ulcerative Colitis,Yes,No,Yes,No,32,Male,Normal,Normal,Positive
+Chronic Obstructive Pulmonary Disease,No,Yes,Yes,Yes,65,Male,Normal,Normal,Positive
