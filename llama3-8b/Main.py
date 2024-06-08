@@ -5,9 +5,11 @@ from typing import List, Optional
 import fire
 import sys
 import TabularToTextualConverter as TabularToTextualConverter
-
+import TextualToTabularConverter as TextualToTabularConverter
 sys.path.append("./llama3")
 from llama import Dialog, Llama
+
+
 
 DATA = "../datasets/data.csv"
 
@@ -38,10 +40,7 @@ def main(
     patient_data_formatter.transform_rows()
     combined_string = patient_data_formatter.get_combined_string()
 
-    print(len(combined_string))
     subset_data = patient_data_formatter.get_subset_data(number_of_patients=5)
-    print(len(subset_data))
-
 
     generator = Llama.build(
         ckpt_dir=ckpt_dir,
@@ -50,37 +49,48 @@ def main(
         max_batch_size=max_batch_size,
     )
 
-    dialogs: List[Dialog] = [
-        [{"role": "user", "content": "Generate 50 additional patient records in the following format and don't hesitate to generate new diseases as well:\
-                Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome]\
-                Use this current data for reference:\
-                Data: " +  str(subset_data[0])}],
-        
-    ]
-    results = generator.chat_completion(
-        dialogs,
-        max_gen_len=max_gen_len,
-        temperature=temperature,
-        top_p=top_p,
-    )
+    i = 0
 
-    for dialog, result in zip(dialogs, results):
-        for msg in dialog:
-            print(f"{msg['role'].capitalize()}: {msg['content']}\n")
-        print(
-            f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
+    while i < len(subset_data):
+         
+        dialogs: List[Dialog] = [
+            [{"role": "user", "content": "Generate 20 additional patient records in the following format and don't hesitate to generate new diseases as well:\
+                    Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome]\
+                    Use this current data for reference:\
+                    Data: " +  str(subset_data[i])}],
+            
+        ]
+        results = generator.chat_completion(
+            dialogs,
+            max_gen_len=max_gen_len,
+            temperature=temperature,
+            top_p=top_p,
         )
-        print("\n==================================\n")
-    
-    # Store the results in a txt file
-    with open('results/synthetic_data.txt', 'w') as f:
+
         for dialog, result in zip(dialogs, results):
             for msg in dialog:
-                f.write(f"{msg['role'].capitalize()}: {msg['content']}\n")
-            f.write(
+                print(f"{msg['role'].capitalize()}: {msg['content']}\n")
+            print(
                 f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
             )
-            f.write("\n==================================\n")
+            print("\n==================================\n")
+        
+        # Store the results in a txt file
+        with open('results/synthetic_data.txt', 'a') as f:
+            for dialog, result in zip(dialogs, results):
+                for msg in dialog:
+                    f.write(f"{msg['role'].capitalize()}: {msg['content']}\n")
+                f.write(
+                    f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
+                )
+                f.write("\n")
+
+        i += 1
+        if i == 1:
+            break
+        
+    converter = TextualToTabularConverter.TextualToTabularConverter('./results/synthetic_data.txt', './results/synthetic_data.csv')
+    converter.process()
 
 if __name__ == "__main__":
     fire.Fire(main)

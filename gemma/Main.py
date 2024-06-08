@@ -46,7 +46,7 @@ if __name__ == "__main__":
     i = 0
 
 
-    """
+    
     with open(output_file, "a") as f:  # Open in append mode to avoid overwriting
 
         while i < len(subset_data):
@@ -78,14 +78,14 @@ if __name__ == "__main__":
     textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter(output_file)
     textualToTabularConverter.write_to_csv("gemma/results/synthetic_data_2b_it.csv")
 
-    """
-
-    main_app = Main(MODEL_2B_IT)
-    main_app.setup()
     
-    input_text = " Hi what is your name ?"
-    main_app.run(input_text)
 
-    print(main_app.get_output())
+    #main_app = Main(MODEL_2B_IT)
+    #main_app.setup()
+    
+    #input_text = " Hi what is your name ?"
+    #main_app.run(input_text)
+
+    #print(main_app.get_output())
 
 

@@ -14,6 +14,6 @@
 /gemma/gemma.cpp/build/tokenizer.spm
 /gemma/model.tar.gz
 /dissertation-env
-/llama3/llama3/Meta-Llama-3-8B
-/llama3/llama3/Meta-Llama-3-8B-Instruct
+/llama3-8b/llama3/Meta-Llama-3-8B
+/llama3-8b/llama3/Meta-Llama-3-8B-Instruct
 /llama2-7B/llama/llama-2-7b-chat
