@@ -5,11 +5,12 @@ from typing import List, Optional
 import fire
 import sys
 import TabularToTextualConverter as TabularToTextualConverter
+import configparser
 
 sys.path.append("./llama")
 from llama import Llama, Dialog
 
-DATA = "../datasets/data.csv"
+CONFIG_FILE = "../config.ini"
 
 def main(
     ckpt_dir: str,
@@ -36,16 +37,20 @@ def main(
             set to the model's max sequence length. Defaults to None.
     """
 
-    patient_data_formatter = TabularToTextualConverter.PatientDataFormatter(DATA)
+    print("Reading configuration file...")
+    config = configparser.ConfigParser()
+    config.read(CONFIG_FILE)
+    data = config['dataset']['dataset_dir']
+
+    print("Formatting patient data...")
+    patient_data_formatter = TabularToTextualConverter.TabularToTextualConverter(data)
     patient_data_formatter.read_data()
     patient_data_formatter.transform_rows()
-    combined_string = patient_data_formatter.get_combined_string()
+    #combined_string = patient_data_formatter.get_combined_string()
 
-    print(len(combined_string))
     subset_data = patient_data_formatter.get_subset_data(number_of_patients=5)
-    print(len(subset_data))
 
-
+    print("Building Llama generator...")
     generator = Llama.build(
         ckpt_dir=ckpt_dir,
         tokenizer_path=tokenizer_path,
@@ -53,40 +58,52 @@ def main(
         max_batch_size=max_batch_size,
     )
 
-    dialogs: List[Dialog] = [
-        [{"role": "user", "content": "Generate 50 additional patient records in the following format and don't hesitate to generate new diseases as well:\
-                Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome]\
-                Use this current data for reference:\
-                Data: " +  str(subset_data[0])}],
-    ]
+    i = 0
+
+    input_text = config['llama-2-7b']['input_text']
+
+    while i < len(subset_data):
+        print("Generating patient records...")
+        dialogs: List[Dialog] = [
+            [{"role": "user", "content": input_text +  str(subset_data[i])}],
+        ]
 
 
 
-    results = generator.chat_completion(
-        dialogs,  # type: ignore
-        max_gen_len=max_gen_len,
-        temperature=temperature,
-        top_p=top_p,
-    )
-
-    for dialog, result in zip(dialogs, results):
-        for msg in dialog:
-            print(f"{msg['role'].capitalize()}: {msg['content']}\n")
-        print(
-            f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
+        results = generator.chat_completion(
+            dialogs,  # type: ignore
+            max_gen_len=max_gen_len,
+            temperature=temperature,
+            top_p=top_p,
         )
-        print("\n==================================\n")
 
-    # Store the results in a txt file
-    with open('results/synthetic_data.txt', 'w') as f:
+        """
+        print("Printing generated records...")
         for dialog, result in zip(dialogs, results):
             for msg in dialog:
-                f.write(f"{msg['role'].capitalize()}: {msg['content']}\n")
-            f.write(
+                print(f"{msg['role'].capitalize()}: {msg['content']}\n")
+            print(
                 f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
             )
-            f.write("\n==================================\n")
+            print("\n==================================\n")
+        """
 
+        results_txt = config['llama-2-7b']['input_file']
+
+        # Store the results in a txt file
+        print("Storing the results in txt file...")
+        with open(results_txt, 'a') as f:
+            for dialog, result in zip(dialogs, results):
+                for msg in dialog:
+                    f.write(f"{msg['role'].capitalize()}: {msg['content']}\n")
+                f.write(
+                    f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
+                )
+                f.write("\n")
+
+        i += 1
+        if i == 1:
+            break
 
 if __name__ == "__main__":
     fire.Fire(main)

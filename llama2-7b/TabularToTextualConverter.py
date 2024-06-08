@@ -1,12 +1,13 @@
 import pandas as pd
 
-class PatientDataFormatter:
+class TabularToTextualConverter:
     def __init__(self, file_path):
         self.file_path = file_path
         self.data = None
         self.string_list = []
 
     def read_data(self):
+        print("Reading data from:", self.file_path)
         self.data = pd.read_csv(self.file_path)
     
     def transform_rows(self):
@@ -14,6 +15,7 @@ class PatientDataFormatter:
         if self.data is None:
             raise ValueError("Data not loaded. Call read_data() first.")
         
+        print("Transforming rows...")
         # Iterate over each row in the DataFrame
         for index, row in self.data.iterrows():
             # Create a list to store the key-value pairs
@@ -38,14 +40,17 @@ class PatientDataFormatter:
         return ", ".join(self.string_list)
 
     def print_string_list(self):
+        print("Printing string list:")
         for s in self.string_list:
             print(s)
 
     def print_combined_string(self):
+        print("Printing combined string:")
         print(self.get_combined_string())
 
     def get_subset_data(self, number_of_patients=15):
         # Subdivide the string list into subsets
+        print(f"Getting subset data for {number_of_patients} patients...")
         subset_data = []
         
         # Iterate over the string list
