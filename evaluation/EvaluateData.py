@@ -3,14 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import ks_2samp, chi2_contingency
-import sys
-
-sys.path.append("./evaluation")
-
 
 # Load datasets
-original_data = pd.read_csv('../datasets/data.csv')
-generated_data = pd.read_csv('../llama3-8b/results/synthetic_data_llama_3_8b.csv')
+original_data = pd.read_csv('./datasets/data.csv')
+generated_data = pd.read_csv('./llama3-8b/results/synthetic_data_llama_3_8b.csv')
 
 # Descriptive statistics comparison
 print("Original Data Description:\n", original_data.describe())

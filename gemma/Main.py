@@ -2,7 +2,9 @@ import Gemma as Gemma
 import pandas as pd
 import TabularToTextualConverter as TabularToTextualConverter
 import TextualToTabularConverter as TextualToTabularConverter
+import sys
 
+sys.path.append("./gemma")
 
 MODEL_2B_IT = "2b-it"
 MODEL_7B_IT = "7b-it"
@@ -41,7 +43,7 @@ if __name__ == "__main__":
     #main_app = Main(MODEL_2B_IT)
     #main_app.setup()
 
-    output_file = "gemma/results/output.txt"
+    output_file = "./results/output.txt"
 
     i = 0
 
