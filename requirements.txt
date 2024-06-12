@@ -6,3 +6,6 @@ matplotlib
 torch
 configparser
 be_great
+seaborn
+scipy
+numpy
