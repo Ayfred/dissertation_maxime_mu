@@ -39,7 +39,8 @@ def main(
     print("Reading configuration file...")
     config = configparser.ConfigParser()
     config.read(CONFIG_FILE)
-    data = config['dataset']['dataset_dir']
+    dataset = config['dataset']['data_in_use']
+    data = config[dataset]['data_dir']
 
     print("Formatting patient data...")
     patient_data_formatter = TabularToTextualConverter.TabularToTextualConverter(data)
@@ -99,7 +100,7 @@ def main(
                 f.write("\n")
 
         i += 1
-        if i == 1:
+        if i == 50:
             break
     
     print("Converting generated text to tabular format...")
