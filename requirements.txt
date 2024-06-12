@@ -9,3 +9,4 @@ be_great
 seaborn
 scipy
 numpy
+scikit-learn
