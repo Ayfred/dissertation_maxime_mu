@@ -51,3 +51,13 @@ Tuberculosis,Yes,Yes,Yes,Yes,55,Male,Low,Normal,Positive
 Mononucleosis,Yes,No,Yes,No,20,Female,Normal,Normal,Negative
 Chronic Obstructive Pulmonary Disease (COPD),Yes,Yes,Yes,Yes,58,Male,High,High,Positive
 Meningitis,Yes,No,Yes,Yes,28,Female,Low,Normal,Positive
+Influenza,Yes,No,Yes,Yes,19,Female,Low,Normal,Positive
+Common Cold,No,Yes,Yes,No,25,Female,Normal,Normal,Negative
+Eczema,No,Yes,Yes,No,25,Female,Normal,Normal,Negative
+Asthma,Yes,Yes,No,Yes,25,Male,Normal,Normal,Positive
+Asthma,Yes,Yes,No,Yes,25,Male,Normal,Normal,Positive
+Influenza,Yes,No,Yes,Yes,19,Female,Low,Normal,Positive
+Common Cold,No,Yes,Yes,No,25,Female,Normal,Normal,Negative
+Eczema,No,Yes,Yes,No,25,Female,Normal,Normal,Negative
+Asthma,Yes,Yes,No,Yes,25,Male,Normal,Normal,Positive
+Asthma,Yes,Yes,No,Yes,25,Male,Normal,Normal,Positive
