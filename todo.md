@@ -2,10 +2,11 @@
 
 - [x] Create a config file
 - [x] Create README.md files
-- [ ] Create a requirements.txt file
+- [x] Create a requirements.txt file
 - [ ] Use TabGenie
 - [ ] Use another dataset data2
 - [ ] Evaluate the data  
+- [ ] Evaluate the data2  
 
 - [x] Generating synthetic data using BeGreat
 - [ ] Evaluate the synthetic data for BeGreat
