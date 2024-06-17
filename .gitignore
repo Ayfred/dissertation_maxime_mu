@@ -19,3 +19,5 @@
 /llama2-7b/llama/llama-2-7b-chat
 /datasets/data2.RData
 /datasets/data2.csv
+/__pycache__/preprocess.cpython-311.pyc
+/__pycache__/preprocess.cpython-311.pyc
