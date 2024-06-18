@@ -3,13 +3,13 @@ print(getwd())
 
 # Load the RData file
 print("Load the RData file")
-load("./datasets/data2.RData")
+load("./datasets/5v_cleandf.rdata")
 
 # Get the total number of rows in the data frame
 total_rows <- nrow(df)
 
 # Calculate the number of rows to keep (half of the total rows)
-half_rows <- ceiling(total_rows / 50)
+half_rows <- ceiling(total_rows / 60)
 
 # Select the first half of the rows
 df_half <- df[1:half_rows, ]

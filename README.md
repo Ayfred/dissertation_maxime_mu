@@ -13,7 +13,11 @@ link:
 [data2.csv]
 name: hospital-triage-and-patient-history-data
 link: https://www.kaggle.com/datasets/maalona/hospital-triage-and-patient-history-data
+
+Either you download it directly by clicking on the link above, or you can use the following linux command wget (if you are opting for the second method be sure to have the credential json file in ~/.kaggle path)
+
 The data provided is in .rdata format, to convert it into a csv format, the converter code is provided in the tools folder.
+
 
 
 Requirements when using the HPC Clusters from Adapt Center for the first time:
