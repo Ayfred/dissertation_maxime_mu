@@ -48,7 +48,7 @@ def main(
     patient_data_formatter.transform_rows()
     #combined_string = patient_data_formatter.get_combined_string()
 
-    subset_data = patient_data_formatter.get_subset_data(number_of_patients=5)
+    subset_data = patient_data_formatter.get_subset_data(number_of_patients=14)
 
     print("Building Llama generator...")
     generator = Llama.build(
@@ -100,8 +100,7 @@ def main(
                 f.write("\n")
 
         i += 1
-        if i == 50:
-            break
+
     
     print("Converting generated text to tabular format...")
     converter = TextualToTabularConverter.TextualToTabularConverter(CONFIG_FILE)

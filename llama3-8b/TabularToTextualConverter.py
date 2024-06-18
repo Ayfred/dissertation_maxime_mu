@@ -48,7 +48,7 @@ class TabularToTextualConverter:
         print("Printing combined string:")
         print(self.get_combined_string())
 
-    def get_subset_data(self, number_of_patients=15):
+    def get_subset_data(self, number_of_patients=14):
         # Subdivide the string list into subsets
         print(f"Getting subset data for {number_of_patients} patients...")
         subset_data = []
