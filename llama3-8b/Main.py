@@ -14,7 +14,6 @@ from llama import Dialog, Llama
 
 CONFIG_FILE = "../config.ini"
 
-
 def main(
     ckpt_dir: str,
     tokenizer_path: str,
