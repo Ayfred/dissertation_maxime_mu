@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
 
     # Adjust max_length for longer sequences
-    max_length = 4000  # Increase this value as needed
+    max_length = 5000  # Increase this value as needed
 
 
     output_file = "results/synthetic_data_gemma_7b.txt"
@@ -37,12 +37,13 @@ if __name__ == "__main__":
     with open(output_file, "a") as f:  # Open in append mode to avoid overwriting
 
         while i < len(subset_data):
-
+            print("Subset number" + str(i))
             # Use the model
             input_text = " Generate additional patient records in the following format:\
-                            Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome]\
+                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome\
                             Use this current data for reference:\
-                            Data: " + str(subset_data[i]) + "\n"
+                            " + str(subset_data[i]) + "\n"
+                            
             input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
 
             outputs = model.generate(input_ids=input_ids.input_ids, max_length=max_length)
@@ -56,9 +57,10 @@ if __name__ == "__main__":
 
             i += 1
 
+
             if i == 1:
                 break
     
             
-    textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter(output_file)
+    textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter("results/synthetic_data_gemma_7b.txt")
     textualToTabularConverter.write_to_csv("results/synthetic_data_gemma_7b.csv")

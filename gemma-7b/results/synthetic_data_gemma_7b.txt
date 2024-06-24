@@ -1,33 +1,503 @@
- Generate additional patient records in the following format:                            Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome]                            Use this current data for reference:                            Data: ['Patient 1: [Disease: Influenza, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 19, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 2: [Disease: Common Cold, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 3: [Disease: Eczema, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 4: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 5: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 6: [Disease: Eczema, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 7: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 8: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 9: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 10: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 11: [Disease: Asthma, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: Yes, Age: 28, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 12: [Disease: Allergic Rhinitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]', 'Patient 13: [Disease: Anxiety Disorders, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 14: [Disease: Common Cold, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 15: [Disease: Diabetes, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]']
-Sure, here are additional patient records in the format requested:
+ Generate additional patient records in the following format:                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome                            Use this current data for reference:                            ['Patient 1: [Disease: Influenza, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 19, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 2: [Disease: Common Cold, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 3: [Disease: Eczema, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 4: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 5: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 6: [Disease: Eczema, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 7: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 8: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 9: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 10: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 11: [Disease: Asthma, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: Yes, Age: 28, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 12: [Disease: Allergic Rhinitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]', 'Patient 13: [Disease: Anxiety Disorders, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 14: [Disease: Common Cold, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 15: [Disease: Diabetes, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]']
+Sure, here are additional patient records in the requested format:
 
 **Patient 16:**
-[Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 20, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Disease: Influenza
+Fever: Yes
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: Yes
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
 
 **Patient 17:**
-[Disease: Common Cold, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 20, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-**Patient
- Generate additional patient records in the following format:                            Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome]                            Use this current data for reference:                            Data: ['Patient 1: [Disease: Influenza, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 19, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 2: [Disease: Common Cold, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 3: [Disease: Eczema, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 4: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 5: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 6: [Disease: Eczema, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 7: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 8: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 9: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 10: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 11: [Disease: Asthma, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: Yes, Age: 28, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 12: [Disease: Allergic Rhinitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]', 'Patient 13: [Disease: Anxiety Disorders, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 14: [Disease: Common Cold, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 15: [Disease: Diabetes, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]']
-Sure, here are additional patient records in the format requested:
-
-**Patient 16:**
-[Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 20, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-**Patient 17:**
-[Disease: Common Cold, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 20, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Disease: Common Cold
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Male
+Blood Pressure: High
+Cholesterol Level: Normal
+Outcome Variable: Negative
 
 **Patient 18:**
-[Disease: Eczema, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 20, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Disease: Eczema
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: High
+Outcome Variable: Negative
 
 **Patient 19:**
-[Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 20, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Disease: Asthma
+Fever: Yes
+Cough: Yes
+Fatigue: No
+Difficulty Breathing: Yes
+Age: 26
+Gender: Male
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
 
 **Patient 20:**
-[Disease: Allergic Rhinitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 20, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Disease: Allergic Rhinitis
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Low
+Outcome Variable: Negative
+ Generate additional patient records in the following format:                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome                            Use this current data for reference:                            ['Patient 16: [Disease: Gastroenteritis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 17: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 18: [Disease: Rheumatoid Arthritis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 19: [Disease: Depression, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 20: [Disease: Liver Cancer, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 21: [Disease: Stroke, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 22: [Disease: Urinary Tract Infection, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 23: [Disease: Dengue Fever, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 24: [Disease: Dengue Fever, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 25: [Disease: Eczema, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 26: [Disease: Gastroenteritis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 27: [Disease: Hepatitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 28: [Disease: Kidney Cancer, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 29: [Disease: Migraine, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 30: [Disease: Migraine, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]']
+Sure, here are the additional patient records:
 
-**Patient 21:**
-[Disease: Anxiety Disorders, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 20, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
+**Patient 31:**
+Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
 
-**Patient 22:**
-[Disease: Diabetes, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 20, Gender: Male, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]
+**Patient 32:**
+Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative
+
+**Patient 33:**
+Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive
+
+**Patient 34:**
+Disease: Diabetes, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+**Patient 35:**
+Disease: Osteoporosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative
+
+**Patient 36:**
+Disease: Thyroid Disease, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+**Patient 37:**
+Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+ Generate additional patient records in the following format:                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome                            Use this current data for reference:                            ['Patient 31: [Disease: Muscular Dystrophy, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 32: [Disease: Sinusitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 33: [Disease: Ulcerative Colitis, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 34: [Disease: Ulcerative Colitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 35: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 36: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 37: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 38: [Disease: Bipolar Disorder, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 39: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 40: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 41: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 42: [Disease: Cerebral Palsy, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 43: [Disease: Colorectal Cancer, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 44: [Disease: Eczema, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 45: [Disease: Hypertensive Heart Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]']
+Sure, here are additional patient records in the format requested:
+
+**Patient 46:**
+Disease: Diabetes Mellitus
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 30
+Gender: Male
+Blood Pressure: High
+Cholesterol Level: High
+Outcome Variable: Positive
+
+**Patient 47:**
+Disease: Influenza
+Fever: Yes
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: Yes
+Age: 30
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 48:**
+Disease: Migraine
+Fever: No
+Cough: No
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 30
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 49:**
+Disease: Osteoporosis
+Fever: No
+Cough: No
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 30
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 50:**
+Disease: Pneumonia
+Fever: Yes
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: Yes
+Age: 30
+Gender: Male
+Blood Pressure: High
+Cholesterol Level: High
+Outcome Variable: Positive
+ Generate additional patient records in the following format:                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome                            Use this current data for reference:                            ['Patient 1: [Disease: Influenza, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 19, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 2: [Disease: Common Cold, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 3: [Disease: Eczema, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 4: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 5: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 6: [Disease: Eczema, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 7: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 8: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 9: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 10: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 11: [Disease: Asthma, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: Yes, Age: 28, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 12: [Disease: Allergic Rhinitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]', 'Patient 13: [Disease: Anxiety Disorders, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 14: [Disease: Common Cold, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 15: [Disease: Diabetes, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]']
+Sure, here are additional patient records in the requested format:
+
+**Patient 16:**
+Disease: Influenza
+Fever: Yes
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: Yes
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 17:**
+Disease: Common Cold
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Male
+Blood Pressure: High
+Cholesterol Level: Normal
+Outcome Variable: Negative
+
+**Patient 18:**
+Disease: Eczema
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: High
+Outcome Variable: Negative
+
+**Patient 19:**
+Disease: Asthma
+Fever: Yes
+Cough: Yes
+Fatigue: No
+Difficulty Breathing: Yes
+Age: 26
+Gender: Male
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 20:**
+Disease: Allergic Rhinitis
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Low
+Outcome Variable: Negative
+ Generate additional patient records in the following format:                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome                            Use this current data for reference:                            ['Patient 16: [Disease: Gastroenteritis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 17: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 18: [Disease: Rheumatoid Arthritis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 19: [Disease: Depression, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 20: [Disease: Liver Cancer, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 21: [Disease: Stroke, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 22: [Disease: Urinary Tract Infection, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 23: [Disease: Dengue Fever, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 24: [Disease: Dengue Fever, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 25: [Disease: Eczema, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 26: [Disease: Gastroenteritis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 27: [Disease: Hepatitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 28: [Disease: Kidney Cancer, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 29: [Disease: Migraine, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 30: [Disease: Migraine, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]']
+Sure, here are the additional patient records:
+
+**Patient 31:**
+Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+**Patient 32:**
+Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative
+
+**Patient 33:**
+Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive
+
+**Patient 34:**
+Disease: Diabetes, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+**Patient 35:**
+Disease: Osteoporosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative
+
+**Patient 36:**
+Disease: Thyroid Disease, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+**Patient 37:**
+Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+ Generate additional patient records in the following format:                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome                            Use this current data for reference:                            ['Patient 31: [Disease: Muscular Dystrophy, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 32: [Disease: Sinusitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 33: [Disease: Ulcerative Colitis, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 34: [Disease: Ulcerative Colitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 35: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 36: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 37: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 38: [Disease: Bipolar Disorder, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 39: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 40: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 41: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 42: [Disease: Cerebral Palsy, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 43: [Disease: Colorectal Cancer, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 44: [Disease: Eczema, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 45: [Disease: Hypertensive Heart Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]']
+Sure, here are additional patient records in the format requested:
+
+**Patient 46:**
+Disease: Diabetes Mellitus
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 30
+Gender: Male
+Blood Pressure: High
+Cholesterol Level: High
+Outcome Variable: Positive
+
+**Patient 47:**
+Disease: Influenza
+Fever: Yes
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: Yes
+Age: 30
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 48:**
+Disease: Migraine
+Fever: No
+Cough: No
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 30
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 49:**
+Disease: Osteoporosis
+Fever: No
+Cough: No
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 30
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 50:**
+Disease: Pneumonia
+Fever: Yes
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: Yes
+Age: 30
+Gender: Male
+Blood Pressure: High
+Cholesterol Level: High
+Outcome Variable: Positive
+ Generate additional patient records in the following format:                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome                            Use this current data for reference:                            ['Patient 1: [Disease: Influenza, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 19, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 2: [Disease: Common Cold, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 3: [Disease: Eczema, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 4: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 5: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 6: [Disease: Eczema, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 7: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 8: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 9: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 10: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 11: [Disease: Asthma, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: Yes, Age: 28, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 12: [Disease: Allergic Rhinitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]', 'Patient 13: [Disease: Anxiety Disorders, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 14: [Disease: Common Cold, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 15: [Disease: Diabetes, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]']
+Sure, here are additional patient records in the requested format:
+
+**Patient 16:**
+Disease: Influenza
+Fever: Yes
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: Yes
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 17:**
+Disease: Common Cold
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Male
+Blood Pressure: High
+Cholesterol Level: Normal
+Outcome Variable: Negative
+
+**Patient 18:**
+Disease: Eczema
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: High
+Outcome Variable: Negative
+
+**Patient 19:**
+Disease: Asthma
+Fever: Yes
+Cough: Yes
+Fatigue: No
+Difficulty Breathing: Yes
+Age: 26
+Gender: Male
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 20:**
+Disease: Allergic Rhinitis
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Low
+Outcome Variable: Negative
+ Generate additional patient records in the following format:                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome                            Use this current data for reference:                            ['Patient 16: [Disease: Gastroenteritis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 17: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 18: [Disease: Rheumatoid Arthritis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 19: [Disease: Depression, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 20: [Disease: Liver Cancer, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 21: [Disease: Stroke, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 22: [Disease: Urinary Tract Infection, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 23: [Disease: Dengue Fever, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 24: [Disease: Dengue Fever, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 25: [Disease: Eczema, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 26: [Disease: Gastroenteritis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 27: [Disease: Hepatitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 28: [Disease: Kidney Cancer, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 29: [Disease: Migraine, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 30: [Disease: Migraine, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]']
+Sure, here are the additional patient records:
+
+**Patient 31:**
+Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+**Patient 32:**
+Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative
+
+**Patient 33:**
+Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive
+
+**Patient 34:**
+Disease: Diabetes, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+**Patient 35:**
+Disease: Osteoporosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative
+
+**Patient 36:**
+Disease: Thyroid Disease, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+**Patient 37:**
+Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+ Generate additional patient records in the following format:                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome                            Use this current data for reference:                            ['Patient 31: [Disease: Muscular Dystrophy, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 32: [Disease: Sinusitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 33: [Disease: Ulcerative Colitis, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 34: [Disease: Ulcerative Colitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 35: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 36: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 37: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 38: [Disease: Bipolar Disorder, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 39: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 40: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 41: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 42: [Disease: Cerebral Palsy, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 43: [Disease: Colorectal Cancer, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 44: [Disease: Eczema, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]', 'Patient 45: [Disease: Hypertensive Heart Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]']
+Sure, here are additional patient records in the format requested:
+
+**Patient 46:**
+Disease: Diabetes Mellitus
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 30
+Gender: Male
+Blood Pressure: High
+Cholesterol Level: High
+Outcome Variable: Positive
+
+**Patient 47:**
+Disease: Influenza
+Fever: Yes
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: Yes
+Age: 30
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 48:**
+Disease: Migraine
+Fever: No
+Cough: No
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 30
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 49:**
+Disease: Osteoporosis
+Fever: No
+Cough: No
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 30
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 50:**
+Disease: Pneumonia
+Fever: Yes
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: Yes
+Age: 30
+Gender: Male
+Blood Pressure: High
+Cholesterol Level: High
+Outcome Variable: Positive
+ Generate additional patient records in the following format:                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome                            Use this current data for reference:                            ['Patient 1: [Disease: Influenza, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 19, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 2: [Disease: Common Cold, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 3: [Disease: Eczema, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 4: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 5: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 6: [Disease: Eczema, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 7: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 8: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 9: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 10: [Disease: Hyperthyroidism, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 11: [Disease: Asthma, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: Yes, Age: 28, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]', 'Patient 12: [Disease: Allergic Rhinitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]', 'Patient 13: [Disease: Anxiety Disorders, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]', 'Patient 14: [Disease: Common Cold, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]', 'Patient 15: [Disease: Diabetes, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]']
+Sure, here are additional patient records in the requested format:
+
+**Patient 16:**
+Disease: Influenza
+Fever: Yes
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: Yes
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 17:**
+Disease: Common Cold
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Male
+Blood Pressure: High
+Cholesterol Level: Normal
+Outcome Variable: Negative
+
+**Patient 18:**
+Disease: Eczema
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: High
+Outcome Variable: Negative
+
+**Patient 19:**
+Disease: Asthma
+Fever: Yes
+Cough: Yes
+Fatigue: No
+Difficulty Breathing: Yes
+Age: 26
+Gender: Male
+Blood Pressure: Normal
+Cholesterol Level: Normal
+Outcome Variable: Positive
+
+**Patient 20:**
+Disease: Allergic Rhinitis
+Fever: No
+Cough: Yes
+Fatigue: Yes
+Difficulty Breathing: No
+Age: 26
+Gender: Female
+Blood Pressure: Normal
+Cholesterol Level: Low
+Outcome Variable: Negative
