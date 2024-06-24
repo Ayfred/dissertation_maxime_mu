@@ -12,16 +12,15 @@
 
 ## I. Introduction
     Synthetic Data and its Importance in the Healthcare Domain
-
-    Limitations of traditional data sources
-
-    LLMs as a powerful tool for generating synthetic data
-
-    Existing Research on LLMs for data generation
     
-    Traditional data generation methods
+    Non-LLM based data generation methods
+        - Training large data might pose a challenge
+        
+    LLMs as a powerful tool for generating synthetic data
+        - Hypothesis on if LLMs are good data generators
 
-## II. Literature Review / Related Work 
+
+## II. Literature Review
     Why is Tabular Data is so Important ?
         Tabular Data is Used Everywhere
         Key attributes of Tabular Data
@@ -30,10 +29,9 @@
         Exploring Synthetic Data Generation
         Challenges in Generating High-Quality Synthetic Data
 
-    Traditional Methods for Synthetic Data Generation
-        Statistical Methods
-        Rule Based Methods
-        Limitations of Traditional Methods
+    Non-LLM Based Methods for Synthetic Data Generation
+        Review of Popular Non-LLM Based Models -> CTGAN (training, architecture)
+        Their Limitations (in-depth)
 
     LLMs as Realistic Data Generator
         A Look at the diverse Landscape of LLMs
@@ -42,43 +40,46 @@
 
     Evaluating the Quality and Effectiveness of Synthetic Data
         Evaluation of the Synthetic Data
-        Ethical Challenges and Opportunities in LLMs
+    
 
-## III. Research Questions
+## III. Research Questions / Methodology
     Q1: How can LLMs be used to generate synthetic tabular data?
 
-    Q2: What types of synthetic data can be generated using LLMs?
+    # Q2: What types of synthetic data can be generated using LLMs? -> Outputs of LLM (structure response)
 
     Q3: How can the quality and realism of synthetic data be evaluated?
 
-    Q4: What are the ethical considerations and potiential biases associated with using LLMs for data generation?
+    
+
+    #(Future Work) Q4: What are the ethical considerations and potiential biases associated with using LLMs for data generation?
 
 ## IV. Methodology
-    Dataset
+    
+    Choice for the LLMs
+        - The need for higher computational resources & High Performance Computing Configuration
 
-    Choice for the traditional methods and LLMs
+    Data Pre-Processing (in general)
 
-    The need for higher computational resources
+    Data Generation (in general, not very specific)
 
-    Data Pre-Processing
+    Data Post-Processing (in general)
 
-    High Performance Computing Configuration
+    Evaluation Methods (technical discussions)
 
-    Data Generation
+## Datasets
 
-    Data Post-Processing
+## VI. Evaluation
+    # hyperparameters for CTGAN
 
 ## V. Results and Analysis
 
-## VI. Evaluation
-
-## VII. Discussion
-
-## VIII. Conclusion
-
-## IX. Future Work
-
-## X. Ethical Statement
 
 
+## VII. Conclusion / Discussion / Future Work
 
+    Ethical Challenges and Opportunities in LLMs
+
+## VIII. Ethical Statement
+
+
+-> 20000 words in avg
