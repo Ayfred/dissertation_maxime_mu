@@ -1,0 +1,53 @@
+{
+    "Respiratory Diseases": [
+        "Influenza", "Common Cold", "Asthma", "Allergic Rhinitis", "Tuberculosis",
+        "Sinusitis", "Bronchitis", "Pneumonia", "Chronic Obstructive Pulmonary Disease",
+        "Laryngitis", "Pneumothorax"
+    ],
+    "Skin Diseases": ["Eczema", "Psoriasis", "Acne"],
+    "Endocrine and Metabolic Diseases": [
+        "Hyperthyroidism", "Hypothyroidism", "Diabetes", "Hyperglycemia", "Hypoglycemia"
+    ],
+    "Mental and Behavioral Disorders": [
+        "Anxiety Disorders", "Depression", "Bipolar Disorder", "Obsessive-Compulsive Disorder",
+        "Autism Spectrum Disorder (ASD)", "Schizophrenia", "Eating Disorders (Anorexia, etc.)", "Dementia"
+    ],
+    "Cardiovascular Diseases": [
+        "Hypertensive Heart Disease", "Myocardial Infarction (Heart Attack)", "Coronary Artery Disease",
+        "Atherosclerosis", "Hypertension", "Stroke"
+    ],
+    "Gastrointestinal Diseases": [
+        "Gastroenteritis", "Pancreatitis", "Hepatitis", "Cirrhosis", "Ulcerative Colitis", "Crohn's Disease",
+        "Irritable Bowel Syndrome", "Appendicitis", "Diverticulitis", "Cholecystitis"
+    ],
+    "Cancers": [
+        "Liver Cancer", "Kidney Cancer", "Colorectal Cancer", "Lung Cancer", "Brain Tumor", "Ovarian Cancer",
+        "Pancreatic Cancer", "Esophageal Cancer", "Prostate Cancer", "Testicular Cancer", "Bladder Cancer",
+        "Thyroid Cancer", "Melanoma", "Lymphoma", "Breast Cancer"
+    ],
+    "Neurological Disorders": [
+        "Migraine", "Multiple Sclerosis", "Epilepsy", "Cerebral Palsy", "Parkinson's Disease", "Alzheimer's Disease",
+        "Spina Bifida", "Tourette Syndrome"
+    ],
+    "Musculoskeletal Diseases": [
+        "Rheumatoid Arthritis", "Osteoarthritis", "Osteoporosis", "Muscular Dystrophy", "Fibromyalgia", "Scoliosis",
+        "Gout", "Osteomyelitis"
+    ],
+    "Infectious Diseases": [
+        "Dengue Fever", "Rabies", "Chickenpox", "Rubella", "Malaria", "Zika Virus", "Tetanus", "Cholera", "Sepsis",
+        "Ebola Virus", "Lyme Disease", "Measles", "Mumps", "Typhoid Fever"
+    ],
+    "Urinary and Reproductive Diseases": [
+        "Urinary Tract Infection (UTI)", "Polycystic Ovary Syndrome (PCOS)", "Endometriosis", "Kidney Disease",
+        "Chronic Kidney Disease"
+    ],
+    "Blood Disorders": [
+        "Anemia", "Sickle Cell Anemia", "Hemophilia"
+    ],
+    "Genetic Disorders": [
+        "Down Syndrome", "Klinefelter Syndrome", "Turner Syndrome", "Marfan Syndrome", "Prader-Willi Syndrome", "Williams Syndrome"
+    ],
+    "Miscellaneous": [
+        "Conjunctivitis (Pink Eye)", "Glaucoma", "Cataracts", "Sinusitis", "Epilepsy", "Hemorrhoids", "Sleep Apnea"
+    ]
+}

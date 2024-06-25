@@ -6,8 +6,8 @@
 Datasets:
 
 [data.csv] 
-name:
-link:
+name: Disease Symptoms and Patient Profile Dataset
+link: https://www.kaggle.com/datasets/uom190346a/disease-symptoms-and-patient-profile-dataset
 
 
 [data2.csv]
@@ -17,6 +17,10 @@ link: https://www.kaggle.com/datasets/maalona/hospital-triage-and-patient-histor
 Either you download it directly by clicking on the link above, or you can use the following linux command wget (if you are opting for the second method be sure to have the credential json file in ~/.kaggle path)
 
 The data provided is in .rdata format, to convert it into a csv format, the converter code is provided in the tools folder.
+
+[data3.csv]
+name: Indian Liver Patient Dataset
+link: https://www.kaggle.com/datasets/uciml/indian-liver-patient-records
 
 
 
