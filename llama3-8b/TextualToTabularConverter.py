@@ -11,10 +11,10 @@ class TextualToTabularConverter:
         self.output_file = self.config['llama-3-8b']['output_file']
         self.data = ""
         self.matches = []
-        self.headers = ['Disease', 'Fever', 'Cough', 'Fatigue', 'Difficulty Breathing', 'Age', 'Gender', 'Blood Pressure', 'Cholesterol Level', 'Outcome Variable']
-        self.pattern = re.compile(
-            r'Patient \d+: \[Disease: (.*?), Fever: (.*?), Cough: (.*?), Fatigue: (.*?), Difficulty Breathing: (.*?), Age: (\d+), Gender: (.*?), Blood Pressure: (.*?), Cholesterol Level: (.*?), Outcome Variable: (.*?)\]'
-        )
+        data_in_use = self.config['dataset']['data_in_use']
+        self.headers = self.config[data_in_use]['headers'].split(', ')
+        self.pattern = re.compile(self.config['llama-3-8b']['pattern'])
+
 
     def read_data(self):
         print("Reading data from:", self.input_file)
