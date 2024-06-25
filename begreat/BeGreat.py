@@ -14,7 +14,8 @@ class SyntheticDataGeneratorBeGreat:
         self.batch_size = int(config['begreat']['batch_size'])
         self.epochs = int(config['begreat']['epochs'])
         self.save_steps = int(config['begreat']['save_steps'])
-        self.data = pd.read_csv(config['dataset']['dataset_dir'])
+        dataset = config['dataset']['data_in_use']
+        self.data = pd.read_csv(config[dataset]['data_dir'])
         self.n_samples = int(config['begreat']['n_samples']) 
         self.output_file = config['begreat']['output_file']
 
