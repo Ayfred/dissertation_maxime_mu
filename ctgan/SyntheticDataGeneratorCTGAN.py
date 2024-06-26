@@ -23,6 +23,8 @@ class SyntheticDataGeneratorCTGAN:
         synthetic_data.to_csv(self.output_file, index=False)
         print("Synthetic data generated and saved to", self.output_file)
 
+# Measure the convergence
+
 
 generator = SyntheticDataGeneratorCTGAN(epochs=10)
 generator.fit_and_generate()
