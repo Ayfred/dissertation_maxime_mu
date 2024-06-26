@@ -107,6 +107,8 @@ def main(
 
         i += 1
 
+        if i == 3:
+            break
     
     print("Converting generated text to tabular format...")
     converter = TextualToTabularConverter.TextualToTabularConverter(CONFIG_FILE)
