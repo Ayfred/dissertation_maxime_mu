@@ -55,6 +55,8 @@ if __name__ == "__main__":
             f.write(generated_text)
             f.write("\n")
 
+            i += 1
+
             
     textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter("results/synthetic_data_gemma_7b.txt")
     textualToTabularConverter.write_to_csv("results/synthetic_data_gemma_7b.csv")
