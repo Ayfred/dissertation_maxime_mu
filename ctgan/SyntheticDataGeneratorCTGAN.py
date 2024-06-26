@@ -11,7 +11,8 @@ class SyntheticDataGeneratorCTGAN:
         config = configparser.ConfigParser()
         config.read(CONFIG_FILE)
         self.output_file = config['ctgan']['output_file']
-        self.data = pd.read_csv(config['dataset']['dataset_dir'])
+        dataset = config['dataset']['data_in_use']
+        self.data = pd.read_csv(config[dataset]['data_dir'])
         self.discrete_columns = config['ctgan']['discrete_columns'].split(', ')
         self.num_samples = int(config['ctgan']['num_samples'])
     
