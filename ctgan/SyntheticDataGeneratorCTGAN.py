@@ -5,7 +5,7 @@ import configparser
 CONFIG_FILE = "../config.ini"
 
 class SyntheticDataGeneratorCTGAN:
-    def __init__(self, epochs=10):
+    def __init__(self, epochs=32):
         self.ctgan = CTGAN(epochs=epochs)
         print("Reading configuration file...")
         config = configparser.ConfigParser()
@@ -27,5 +27,5 @@ class SyntheticDataGeneratorCTGAN:
 # Measure the convergence
 
 
-generator = SyntheticDataGeneratorCTGAN(epochs=10)
+generator = SyntheticDataGeneratorCTGAN(epochs=32)
 generator.fit_and_generate()
