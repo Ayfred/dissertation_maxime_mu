@@ -6,6 +6,7 @@ import fire
 import sys
 import TabularToTextualConverter as TabularToTextualConverter
 import TextualToTabularConverter as TextualToTabularConverter
+import os
 import configparser
 
 sys.path.append("./llama3")
@@ -86,6 +87,12 @@ def main(
         """
         
         results_txt = config['llama-3-8b']['input_file']
+
+        # Check if the file exists
+        if not os.path.exists(results_txt):
+            # Create the file if it doesn't exist
+            with open(results_txt, 'w') as f:
+                pass
 
         # Store the results in a txt file
         print("Storing the results in txt file...")
