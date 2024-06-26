@@ -29,8 +29,8 @@ def main():
     subset_data = patient_data_formatter.get_subset_data(number_of_patients=12)
 
     print("Loading Mistral-7B Model...")
-    tokenizer_path = '/home/mmu/spinning-storage/mmu/mistral-7b/Mistral-7B-Instruct-v0.2'
-    model_path = '/home/mmu/spinning-storage/mmu/mistral-7b/Mistral-7B-Instruct-v0.2'
+    tokenizer_path = '/home/mmu/spinning-storage/mmu/mistral-7b/Mistral-7B-Instruct-v0.3'
+    model_path = '/home/mmu/spinning-storage/mmu/mistral-7b/Mistral-7B-Instruct-v0.3'
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
     model = AutoModelForCausalLM.from_pretrained(model_path).to(device)
 
