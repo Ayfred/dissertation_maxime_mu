@@ -15,11 +15,12 @@ class TextualToTabularConverter:
         self.headers = self.config[data_in_use]['headers'].split(', ')
         self.pattern = re.compile(self.config['llama-3-8b']['pattern'])
 
-
     def read_data(self):
         print("Reading data from:", self.input_file)
         with open(self.input_file, 'r') as file:
-            self.data = file.read()
+            self.data = "\n".join(
+                line for line in file if not (line.startswith("User:") or line.startswith("Use") or line.startswith("Data:") or line.startswith("Note:"))
+            )
 
     def parse_data(self):
         print("Parsing data...")
