@@ -26,11 +26,11 @@ def main():
     patient_data_formatter = TabularToTextualConverter.TabularToTextualConverter(data)
     patient_data_formatter.read_data()
     patient_data_formatter.transform_rows()
-    subset_data = patient_data_formatter.get_subset_data(number_of_patients=5)
+    subset_data = patient_data_formatter.get_subset_data(number_of_patients=12)
 
     print("Loading Mistral-7B Model...")
-    tokenizer_path = '/home/support/llm/Mistral-7B-Instruct-v0.2'
-    model_path = '/home/support/llm/Mistral-7B-Instruct-v0.2'
+    tokenizer_path = '/home/mmu/spinning-storage/mmu/mistral-7b/Mistral-7B-Instruct-v0.2'
+    model_path = '/home/mmu/spinning-storage/mmu/mistral-7b/Mistral-7B-Instruct-v0.2'
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
     model = AutoModelForCausalLM.from_pretrained(model_path).to(device)
 
@@ -58,8 +58,6 @@ def main():
             f.write(f"Generated Response:\n{generated_text}\n\n")
 
         i += 1
-        if i == 35:  # For testing, you can adjust the limit here
-            break
 
     print("Converting generated text to tabular format...")
     converter = TextualToTabularConverter.TextualToTabularConverter(CONFIG_FILE)
