@@ -39,7 +39,7 @@ if __name__ == "__main__":
         while i < len(subset_data):
             print("Subset number" + str(i))
             # Use the model
-            input_text = " Generate additional patient records in the following format:\
+            input_text = " Generate 12 additional patient records in the following format:\
                             Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome\
                             Use this current data for reference:\
                             " + str(subset_data[i]) + "\n"
@@ -55,12 +55,6 @@ if __name__ == "__main__":
             f.write(generated_text)
             f.write("\n")
 
-            i += 1
-
-
-            if i == 1:
-                break
-    
             
     textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter("results/synthetic_data_gemma_7b.txt")
     textualToTabularConverter.write_to_csv("results/synthetic_data_gemma_7b.csv")
