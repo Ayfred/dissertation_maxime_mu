@@ -63,7 +63,7 @@ def main(
     input_text = config['llama-3-8b']['input_text']
 
     while i < len(subset_data):
-        print("Generating patient records...")
+        print("Generating patient records... number: " + str(i)
         dialogs: List[Dialog] = [
             [{"role": "user", "content": input_text +  str(subset_data[i])}],
         ]
@@ -117,9 +117,7 @@ def main(
 
         i += 1
 
-        if i == 3:
-            break
-    
+
     print("Converting generated text to tabular format...")
     converter = TextualToTabularConverter.TextualToTabularConverter(CONFIG_FILE)
     converter.process()
