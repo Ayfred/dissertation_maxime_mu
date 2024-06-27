@@ -38,7 +38,7 @@ def main():
     input_text = config['mistral-7b']['input_text']
 
 
-    lines_to_skip = ["User:", "Use", "Data:", "> Assistant:", "Note:"]
+    lines_to_skip = ["Here are", "Patient Record", "Prompt:", "Use this:", "Patient i:", "Data:", "Generated Response:"]
 
     def filter_lines(text: str, prefixes: list) -> str:
         filtered_lines = []
