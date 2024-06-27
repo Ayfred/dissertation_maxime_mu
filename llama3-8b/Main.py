@@ -96,14 +96,24 @@ def main(
 
         # Store the results in a txt file
         print("Storing the results in txt file...")
+        lines_to_skip = ["User:", "Use", "Data:", "> Assistant:", "Note:"]
+
+        def filter_lines(text: str, prefixes: List[str]) -> str:
+            filtered_lines = []
+            for line in text.splitlines():
+                if not any(line.startswith(prefix) for prefix in prefixes):
+                    filtered_lines.append(line)
+            return "\n".join(filtered_lines)
+
         with open(results_txt, 'a') as f:
             for dialog, result in zip(dialogs, results):
-                for msg in dialog:
-                    f.write(f"{msg['role'].capitalize()}: {msg['content']}\n")
-                f.write(
-                    f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
-                )
-                f.write("\n")
+                dialog_content = "\n".join([f"{msg['role'].capitalize()}: {msg['content']}" for msg in dialog])
+                result_content = f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
+                combined_content = dialog_content + "\n" + result_content
+                
+                filtered_content = filter_lines(combined_content, lines_to_skip)
+                
+                f.write(filtered_content + "\n\n")
 
         i += 1
 
