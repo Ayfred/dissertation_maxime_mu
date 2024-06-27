@@ -63,7 +63,7 @@ def main(
     input_text = config['llama-3-8b']['input_text']
 
     while i < len(subset_data):
-        print("Generating patient records... number: " + str(i)
+        print("Generating patient records... number: " + str(i))
         dialogs: List[Dialog] = [
             [{"role": "user", "content": input_text +  str(subset_data[i])}],
         ]
