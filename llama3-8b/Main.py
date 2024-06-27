@@ -96,7 +96,7 @@ def main(
 
         # Store the results in a txt file
         print("Storing the results in txt file...")
-        lines_to_skip = ["User:", "Use", "Data:", "> Assistant:", "Note:", "Patient i:", "Note that"]
+        lines_to_skip = ["User:", "Use", "Data:", "> Assistant:", "Note:", "Patient i:", "Note that", "Let me"]
 
         def filter_lines(text: str, prefixes: List[str]) -> str:
             filtered_lines = []

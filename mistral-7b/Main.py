@@ -37,6 +37,17 @@ def main():
     i = 0
     input_text = config['mistral-7b']['input_text']
 
+
+    lines_to_skip = ["User:", "Use", "Data:", "> Assistant:", "Note:"]
+
+    def filter_lines(text: str, prefixes: list) -> str:
+        filtered_lines = []
+        for line in text.splitlines():
+            if not any(line.startswith(prefix) for prefix in prefixes):
+                filtered_lines.append(line)
+        return "\n".join(filtered_lines)
+
+
     while i < len(subset_data):
         print(f"Generating response for patient record {i+1}/{len(subset_data)}...")
         prompt = input_text + str(subset_data[i])
@@ -53,9 +64,9 @@ def main():
         # Store the generated text in a file
         results_txt = config['mistral-7b']['input_file']
         with open(results_txt, 'a') as f:
-            f.write(f"Patient Record {i+1}:\n")
-            f.write(f"Prompt: {prompt}\n")
-            f.write(f"Generated Response:\n{generated_text}\n\n")
+            content = f"Patient Record {i+1}:\nPrompt: {prompt}\nGenerated Response:\n{generated_text}\n\n"
+            filtered_content = filter_lines(content, lines_to_skip)
+            f.write(filtered_content + "\n\n")
 
         i += 1
 
