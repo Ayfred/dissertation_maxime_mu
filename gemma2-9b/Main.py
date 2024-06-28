@@ -4,7 +4,7 @@ import TabularToTextualConverter as TabularToTextualConverter
 import TextualToTabularConverter as TextualToTabularConverter
 import sys
 
-sys.path.append("./gemma-7b")
+sys.path.append("./gemma2-9b")
 DATA = "../datasets/data.csv"
 
 if __name__ == "__main__":
@@ -18,13 +18,13 @@ if __name__ == "__main__":
     
     # Load the model
     quantization_config = BitsAndBytesConfig(load_in_4bit=True)
-    tokenizer = AutoTokenizer.from_pretrained("/home/mmu/spinning-storage/mmu/gemma-7b/")
-    model = AutoModelForCausalLM.from_pretrained("/home/mmu/spinning-storage/mmu/gemma-7b/", quantization_config=quantization_config)
+    tokenizer = AutoTokenizer.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it/")
+    model = AutoModelForCausalLM.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it", quantization_config=quantization_config)
 
     # Adjust max_length for longer sequences
     max_length = 5000  # Increase this value as needed
 
-    output_file = "results/synthetic_data_gemma_7b.txt"
+    output_file = "results/synthetic_data_gemma2_9b.txt"
 
     i = 0
     
@@ -52,5 +52,5 @@ if __name__ == "__main__":
 
             i += 1
 
-    textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter("results/synthetic_data_gemma_7b.txt")
-    textualToTabularConverter.write_to_csv("results/synthetic_data_gemma_7b.csv")
+    textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter("results/synthetic_data_gemma2_9b.txt")
+    textualToTabularConverter.write_to_csv("results/synthetic_data_gemma2_9b.csv")
