@@ -39,7 +39,7 @@ def main(
     print("Reading configuration file...")
     config = configparser.ConfigParser()
     config.read(CONFIG_FILE)
-    data = config['dataset']['dataset_dir']
+    data = config['data1']['data_dir']
 
     print("Formatting patient data...")
     patient_data_formatter = TabularToTextualConverter.TabularToTextualConverter(data)
@@ -47,7 +47,7 @@ def main(
     patient_data_formatter.transform_rows()
     # combined_string = patient_data_formatter.get_combined_string()
 
-    subset_data = patient_data_formatter.get_subset_data(number_of_patients=5)
+    subset_data = patient_data_formatter.get_subset_data(number_of_patients=12)
 
     print("Setting CUDA device...")
     num_gpus = torch.cuda.device_count()
