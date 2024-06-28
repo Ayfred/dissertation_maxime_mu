@@ -3,20 +3,30 @@ import pandas as pd
 import TabularToTextualConverter as TabularToTextualConverter
 import TextualToTabularConverter as TextualToTabularConverter
 import sys
+import configparser
+from typing import List, Optional
 
 sys.path.append("./gemma2-9b")
-DATA = "../datasets/data.csv"
+CONFIG_FILE = "../config.ini"
 
 if __name__ == "__main__":
-    patient_data_formatter = TabularToTextualConverter.PatientDataFormatter(DATA)
+    print("Reading configuration file...")
+    config = configparser.ConfigParser()
+    config.read(CONFIG_FILE)
+    dataset = config['dataset']['data_in_use']
+    data = config[dataset]['data_dir']
+
+    print("Formatting patient data...")
+    patient_data_formatter = TabularToTextualConverter.PatientDataFormatter(data)
     patient_data_formatter.read_data()
     patient_data_formatter.transform_rows()
-    combined_string = patient_data_formatter.get_combined_string()
+    #combined_string = patient_data_formatter.get_combined_string()
 
     # create a subset of the data (every 15 patients)
-    subset_data = patient_data_formatter.get_subset_data()
+    subset_data = patient_data_formatter.get_subset_data(number_of_patients=12)
     
     # Load the model
+    print("Loading model...")
     quantization_config = BitsAndBytesConfig(load_in_4bit=True)
     tokenizer = AutoTokenizer.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it/")
     model = AutoModelForCausalLM.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it", quantization_config=quantization_config)
@@ -24,19 +34,30 @@ if __name__ == "__main__":
     # Adjust max_length for longer sequences
     max_length = 5000  # Increase this value as needed
 
-    output_file = "results/synthetic_data_gemma2_9b.txt"
+    input_text = config['gemma2-9b']['input_text']
+
+    #output_file = "results/synthetic_data_gemma2_9b.txt"
+    results_txt = config['gemma2-9b']['input_file']
+
 
     i = 0
+
+
+    def filter_lines(text: str, prefixes: List[str]) -> str:
+        filtered_lines = []
+        for line in text.splitlines():
+            if not any(line.startswith(prefix) for prefix in prefixes):
+                filtered_lines.append(line)
+        return "\n".join(filtered_lines)
     
-    with open(output_file, "a") as f:  # Open in append mode to avoid overwriting
+    # Store the results in a txt file
+    lines_to_skip = ["Generate", "Disease:", "Use this"]
+    with open(results_txt, "a") as f:  # Open in append mode to avoid overwriting
 
         while i < len(subset_data):
             print("Subset number: " + str(i))
             # Use the model
-            input_text = " Generate 12 additional patient records in the following format:\
-                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome\
-                            Use this current data for reference:\
-                            " + str(subset_data[i]) + "\n"
+            input_text = input_text + "\n" + str(subset_data[i]) + "\n"
     
             input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
 
@@ -46,11 +67,12 @@ if __name__ == "__main__":
             
             generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-
-            f.write(generated_text)
-            f.write("\n")
+            filtered_content = filter_lines(generated_text, lines_to_skip)
+            
+            f.write(filtered_content + "\n\n")
 
             i += 1
 
+    print("Storing the results in txt file...")
     textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter("results/synthetic_data_gemma2_9b.txt")
     textualToTabularConverter.write_to_csv("results/synthetic_data_gemma2_9b.csv")
