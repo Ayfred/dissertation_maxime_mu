@@ -58,24 +58,13 @@ if __name__ == "__main__":
             return "\n".join(filtered_lines)
         
         # Store the results in a txt file
-        lines_to_skip = ["Generate", "Disease:", "Use this"]
+        lines_to_skip = ["Generate", "Disease:", "Use this", "Generate 12"]
         with open(results_txt, "a") as f:  # Open in append mode to avoid overwriting
 
             while i < len(subset_data):
+/bin/bash: q: command not found
 
-                print("Subset number: " + str(i) + " out of " + str(len(subset_data)))
-                # Use the model
-                input_text = input_text + "\n" + str(subset_data[i]) + "\n"
-               
-                if i % 6 == 0:
-                    # Reload the model every 6 iterations
-                    print("Reloading model...")
-                    quantization_config = BitsAndBytesConfig(load_in_4bit=True)
-                    tokenizer = AutoTokenizer.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it/")
-                    model = AutoModelForCausalLM.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it", quantization_config=quantization_config)
-
-
-                print("Subset number: " + str(i) + " out of " + str(len(subset_data)))
+                print("Subset number: " + str(i + 1) + " out of " + str(len(subset_data)))
                 # Use the model
                 input_text = input_text + "\n" + str(subset_data[i]) + "\n"
                 
