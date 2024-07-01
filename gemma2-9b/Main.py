@@ -5,6 +5,7 @@ import TextualToTabularConverter as TextualToTabularConverter
 import sys
 import configparser
 from typing import List, Optional
+import torch
 
 sys.path.append("./gemma2-9b")
 CONFIG_FILE = "../config.ini"
@@ -29,9 +30,8 @@ if __name__ == "__main__":
         
         # Load the model
         print("Loading model...")
-        quantization_config = BitsAndBytesConfig(load_in_4bit=True)
         tokenizer = AutoTokenizer.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it/")
-        model = AutoModelForCausalLM.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it").to(device="cuda")
+        model = AutoModelForCausalLM.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it", device="cuda", torch_dtype=torch.float16)
 
         # Adjust max_length for longer sequences
         max_length = 5000  # Increase this value as needed
@@ -60,7 +60,7 @@ if __name__ == "__main__":
             # Use the model
             input_text = input_text + "\n" + str(subset_data[i]) + "\n"
             
-            input_ids = tokenizer(input_text, return_tensors="pt").to(model.device)
+            input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
 
             print("Generating patient records...")
             outputs = model.generate(input_ids=input_ids.input_ids, max_length=max_length, no_repeat_ngram_size=2)
