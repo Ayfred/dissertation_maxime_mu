@@ -58,7 +58,7 @@ if __name__ == "__main__":
         with open(results_txt, "a") as f:  # Open in append mode to avoid overwriting
 
             while i < len(subset_data):
-                input_text = config['gemma2-9b']['input_text']
+                input_text = config['gemma2-9b']['input_text_1']
 
                 print("Subset number: " + str(i + 1) + " out of " + str(len(subset_data)))
                 # Use the model
