@@ -61,10 +61,10 @@ if __name__ == "__main__":
         with open(results_txt, "a") as f:  # Open in append mode to avoid overwriting
 
             while i < len(subset_data):
-                print("Subset number: " + str(i) + " out of " + str(len(subset_data))
+                print("Subset number: " + str(i) + " out of " + str(len(subset_data)))
                 # Use the model
                 input_text = input_text + "\n" + str(subset_data[i]) + "\n"
-                print(input_text)
+                #print(input_text)
                 input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
 
                 print("Generating patient records...")
