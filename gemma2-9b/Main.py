@@ -1,4 +1,3 @@
-
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import pandas as pd
 import TabularToTextualConverter as TabularToTextualConverter
@@ -10,10 +9,6 @@ from typing import List, Optional
 sys.path.append("./gemma2-9b")
 CONFIG_FILE = "../config.ini"
 
-# Set CUDA_LAUNCH_BLOCKING for debugging
-import os
-os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
-os.environ["TORCH_USE_CUDA_DSA"] = "1"  # Enable device-side assertions
 
 if __name__ == "__main__":
     try:
@@ -71,7 +66,7 @@ if __name__ == "__main__":
                 print("Generating patient records...")
                 outputs = model.generate(input_ids=input_ids.input_ids, max_length=max_length)
 
-                
+                print(outputs)
                 generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
                 filtered_content = filter_lines(generated_text, lines_to_skip)
