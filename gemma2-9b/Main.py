@@ -52,28 +52,29 @@ if __name__ == "__main__":
         lines_to_skip = ["Generate", "Disease:", "Use this", "\" Generate 12", "\" "]
         lines_to_skip = [""]
 
-        with open(results_txt, "a") as f:  # Open in append mode to avoid overwriting
 
-            while i < len(subset_data):
-                input_text = config['gemma2-9b']['input_text_1']
+        while i < len(subset_data):
+            input_text = config['gemma2-9b']['input_text_1']
 
-                print("Subset number: " + str(i + 1) + " out of " + str(len(subset_data)))
-                # Use the model
-                input_text = input_text + "\n" + str(subset_data[i]) + "\n"
-                
-                input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
+            print("Subset number: " + str(i + 1) + " out of " + str(len(subset_data)))
+            # Use the model
+            input_text = input_text + "\n" + str(subset_data[i]) + "\n"
+            
+            input_ids = tokenizer(input_text, return_tensors="pt").to(model.device)
 
-                print("Generating patient records...")
-                outputs = model.generate(input_ids=input_ids.input_ids, max_length=max_length)
+            print("Generating patient records...")
+            outputs = model.generate(input_ids=input_ids.input_ids, max_length=max_length, no_repeat_ngram_size=2)
 
-                print(outputs)
-                generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+            generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+            print(generated_text)
 
-                filtered_content = filter_lines(generated_text, lines_to_skip)
-                
+            filtered_content = filter_lines(generated_text, lines_to_skip)
+
+            with open(results_txt, "a") as f:  # Open in append mode to avoid overwriting
+        
                 f.write(filtered_content + "\n\n")
 
-                i += 1
+            i += 1
 
         print("Storing the results in txt file...")
         textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter("results/synthetic_data_gemma2_9b.txt")
