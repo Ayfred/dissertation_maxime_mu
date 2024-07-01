@@ -55,6 +55,8 @@ if __name__ == "__main__":
         
         # Store the results in a txt file
         lines_to_skip = ["Generate", "Disease:", "Use this", "\" Generate 12", "\" "]
+        lines_to_skip = [""]
+
         with open(results_txt, "a") as f:  # Open in append mode to avoid overwriting
 
             while i < len(subset_data):
