@@ -64,7 +64,7 @@ if __name__ == "__main__":
                 print("Subset number: " + str(i))
                 # Use the model
                 input_text = input_text + "\n" + str(subset_data[i]) + "\n"
-        
+                print(input_text)
                 input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
 
                 print("Generating patient records...")
