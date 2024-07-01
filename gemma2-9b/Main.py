@@ -54,7 +54,7 @@ if __name__ == "__main__":
             return "\n".join(filtered_lines)
         
         # Store the results in a txt file
-        lines_to_skip = ["Generate", "Disease:", "Use this", "\" Generate 12"]
+        lines_to_skip = ["Generate", "Disease:", "Use this", "\" Generate 12", "\" "]
         with open(results_txt, "a") as f:  # Open in append mode to avoid overwriting
 
             while i < len(subset_data):
