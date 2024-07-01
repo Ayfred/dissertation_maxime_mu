@@ -1,3 +1,4 @@
+
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import pandas as pd
 import TabularToTextualConverter as TabularToTextualConverter
@@ -61,10 +62,23 @@ if __name__ == "__main__":
         with open(results_txt, "a") as f:  # Open in append mode to avoid overwriting
 
             while i < len(subset_data):
+
                 print("Subset number: " + str(i) + " out of " + str(len(subset_data)))
                 # Use the model
                 input_text = input_text + "\n" + str(subset_data[i]) + "\n"
-                #print(input_text)
+               
+                if i % 6 == 0:
+                    # Reload the model every 6 iterations
+                    print("Reloading model...")
+                    quantization_config = BitsAndBytesConfig(load_in_4bit=True)
+                    tokenizer = AutoTokenizer.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it/")
+                    model = AutoModelForCausalLM.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it", quantization_config=quantization_config)
+
+
+                print("Subset number: " + str(i) + " out of " + str(len(subset_data)))
+                # Use the model
+                input_text = input_text + "\n" + str(subset_data[i]) + "\n"
+                
                 input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
 
                 print("Generating patient records...")
