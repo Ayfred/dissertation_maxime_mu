@@ -31,7 +31,7 @@ if __name__ == "__main__":
         print("Loading model...")
         quantization_config = BitsAndBytesConfig(load_in_4bit=True)
         tokenizer = AutoTokenizer.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it/")
-        model = AutoModelForCausalLM.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it", quantization_config=quantization_config)
+        model = AutoModelForCausalLM.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it").to(device="cuda")
 
         # Adjust max_length for longer sequences
         max_length = 5000  # Increase this value as needed
