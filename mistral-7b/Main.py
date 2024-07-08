@@ -13,7 +13,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"  # Check if CUDA is avai
 CONFIG_FILE = "../config.ini"
 
 # Set the number of threads for PyTorch
-torch.set_num_threads(8)
+#torch.set_num_threads(8)
 
 def main():
     print("Reading configuration file...")
