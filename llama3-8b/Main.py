@@ -48,7 +48,7 @@ def main(
     patient_data_formatter.transform_rows()
     #combined_string = patient_data_formatter.get_combined_string()
 
-    subset_data = patient_data_formatter.get_subset_data(number_of_patients=12)
+    subset_data = patient_data_formatter.get_subset_data(number_of_patients=15)
 
     print("Building Llama generator...")
     generator = Llama.build(
