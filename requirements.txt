@@ -1,5 +1,5 @@
 pandas
-transformers
+"transformers==4.42.1"
 huggingface-cli
 ctgan
 matplotlib

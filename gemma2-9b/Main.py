@@ -31,10 +31,14 @@ if __name__ == "__main__":
         # Load the model
         print("Loading model...")
         tokenizer = AutoTokenizer.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it/")
-        model = AutoModelForCausalLM.from_pretrained("/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it", device="cuda", torch_dtype=torch.float16)
+        model = AutoModelForCausalLM.from_pretrained(
+            "/home/mmu/spinning-storage/mmu/gemma2/gemma-2-9b-it/",
+            device_map="auto",
+            torch_dtype=torch.bfloat16
+        )
 
         # Adjust max_length for longer sequences
-        max_length = 5000  # Increase this value as needed
+        max_length = 8000  # Increase this value as needed
 
         #output_file = "results/synthetic_data_gemma2_9b.txt"
         results_txt = config['gemma2-9b']['input_file']
@@ -63,9 +67,9 @@ if __name__ == "__main__":
             input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
 
             print("Generating patient records...")
-            outputs = model.generate(input_ids=input_ids.input_ids, max_length=max_length, no_repeat_ngram_size=2)
+            outputs = model.generate(input_ids=input_ids.input_ids, max_length=max_length)
 
-            generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+            generated_text = tokenizer.decode(outputs[0])
             print(generated_text)
 
             filtered_content = filter_lines(generated_text, lines_to_skip)
