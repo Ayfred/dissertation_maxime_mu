@@ -13,7 +13,7 @@ class TextualToTabularConverter:
         self.matches = []
         data_in_use = self.config['dataset']['data_in_use']
         self.headers = self.config[data_in_use]['headers'].split(', ')
-        self.pattern = re.compile(self.config['llama-3-8b']['pattern'])
+        self.pattern = re.compile(self.config['llama-3-8b']['pattern'], re.MULTILINE)
 
     def read_data(self):
         print("Reading data from:", self.input_file)
@@ -22,7 +22,25 @@ class TextualToTabularConverter:
 
     def parse_data(self):
         print("Parsing data...")
-        self.matches = self.pattern.findall(self.data)
+        # Remove any unwanted text
+        self.data = re.sub(r'HAEMATOCRIT: \d+\.\d+"', '', self.data)
+        
+        # Extract individual patient data blocks
+        patient_blocks = re.split(r'\nPatient \d+:\n', self.data)
+        for block in patient_blocks:
+            block = block.strip()
+            if block:
+                # Extract the values using the headers
+                match = [self.extract_value(block, header) for header in self.headers]
+                self.matches.append(match)
+
+    def extract_value(self, block, header):
+        # Use regex to extract the value corresponding to the header
+        pattern = re.compile(rf'{header}:\s*([^,\n]+)')
+        match = pattern.search(block)
+        if match:
+            return match.group(1).strip()
+        return ""
 
     def write_csv(self):
         print("Writing CSV to:", self.output_file)
@@ -30,7 +48,9 @@ class TextualToTabularConverter:
             writer = csv.writer(csvfile)
             writer.writerow(self.headers)
             for match in self.matches:
-                writer.writerow(match)
+                # Handle potential trailing backslash
+                cleaned_match = [value.rstrip('\\') for value in match]
+                writer.writerow(cleaned_match)
 
     def process(self):
         print("Starting data processing...")

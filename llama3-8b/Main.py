@@ -96,7 +96,7 @@ def main(
 
         # Store the results in a txt file
         print("Storing the results in txt file...")
-        lines_to_skip = ["User:", "Use", "Data:", "> Assistant:", "Note:", "Patient i:", "Note that", "Let me"]
+        lines_to_skip = ["User:", "Use", "Data:", "> Assistant:", "Note:", "Patient i:", "Note that", "Let me", "And put the data"]
 
         def filter_lines(text: str, prefixes: List[str]) -> str:
             filtered_lines = []
@@ -116,8 +116,7 @@ def main(
                 f.write(filtered_content + "\n\n")
 
         i += 1
-        if i == 2:
-            break
+        
 
 
     print("Converting generated text to tabular format...")
