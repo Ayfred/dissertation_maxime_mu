@@ -116,6 +116,8 @@ def main(
                 f.write(filtered_content + "\n\n")
 
         i += 1
+        if i == 2:
+            break
 
 
     print("Converting generated text to tabular format...")

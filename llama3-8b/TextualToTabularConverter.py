@@ -18,9 +18,7 @@ class TextualToTabularConverter:
     def read_data(self):
         print("Reading data from:", self.input_file)
         with open(self.input_file, 'r') as file:
-            self.data = "\n".join(
-                line for line in file if not (line.startswith("User:") or line.startswith("Use") or line.startswith("Data:") or line.startswith("Note:"))
-            )
+            self.data = file.read()
 
     def parse_data(self):
         print("Parsing data...")
