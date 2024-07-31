@@ -26,7 +26,7 @@ if __name__ == "__main__":
         #combined_string = patient_data_formatter.get_combined_string()
 
         # create a subset of the data (every 15 patients)
-        subset_data = patient_data_formatter.get_subset_data(number_of_patients=12)
+        subset_data = patient_data_formatter.get_subset_data(number_of_patients=15)
         
         # Load the model
         print("Loading model...")
@@ -79,6 +79,9 @@ if __name__ == "__main__":
                 f.write(filtered_content + "\n\n")
 
             i += 1
+
+            if i == 2:
+                break
 
         print("Storing the results in txt file...")
         textualToTabularConverter = TextualToTabularConverter.TextualToTabularConverter("results/synthetic_data_gemma2_9b.txt")

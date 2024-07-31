@@ -1,561 +1,766 @@
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 13: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 22, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-Patient 14: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 27, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 15: [Disease: Chronic Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-Patient 16: [Disease: Gout, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 26, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 17: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 24, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-Patient 18: [Disease: Laryngitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 31, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 19: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 23, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-Patient 20: [Disease: Sinusitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-Patient 21: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 27, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 22: [Disease: Pneumothorax, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 32, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-Patient 23: [Disease: Pleurisy, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-Patient 24: [Disease: Bronchiectasis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 28, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-Patient 25: [Disease: Interstitial Lung Disease, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 31, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 12: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 35, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 13: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 22, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 14: [Disease: Gastroenteritis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 15: [Disease: Lymphoma, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 16: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 17: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 35, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 18: [Disease: Sarcoidosis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 19: [Disease: Malaria, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 32, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 20: [Disease: Crohn's Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 21: [Disease: Ulcerative Colitis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 22: [Disease: Sepsis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
 
 
-
-Patient 25: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 26: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 27: [Disease: Malaria, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 31, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 28: [Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 29: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 30: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 31: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 32: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 33: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 31, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 34: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 35: [Disease: Hepatitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 36: [Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-
-
-Patient 37: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 35, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 38: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 39: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 40: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 42, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 41: [Disease: Thyroiditis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 36, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 42: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 43: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 39, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 44: [Disease: Osteoporosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 45: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 46, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 46: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 37, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 47: [Disease: Cystic Fibrosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 44, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 48: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 43, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
 ```
-Patient 49: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 50: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 35, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 51: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 52: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 53: [Disease: Ulcerative Colitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 54: [Disease: Vitiligo, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 35, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 55: [Disease: Wegener's Granulomatosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 56: [Disease: Whipple's Disease, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 57: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 58: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 35, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 59: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 60: [Disease: Malaria, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 23: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 35, Gender: Female, Total Bilirubin: 0.5, Direct Bilirubin: 0.2, Alkaline Phosphotase: 120, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 25, Total Proteins: 7.2, Albumin: 4.5, Albumin and Globulin Ratio: 1.2]
+
+Patient 24: [Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Male, Total Bilirubin: 0.8, Direct Bilirubin: 0.3, Alkaline Phosphotase: 150, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 7.5, Albumin: 4.2, Albumin and Globulin Ratio: 1.1]
+
+Patient 25: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 28, Gender: Female, Total Bilirubin: 1.2, Direct Bilirubin: 0.5, Alkaline Phosphotase: 180, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 35, Total Proteins: 8.1, Albumin: 4.8, Albumin and Globulin Ratio: 1.3]
+
+Patient 26: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 31, Gender: Male, Total Bilirubin: 1.0, Direct Bilirubin: 0.4, Alkaline Phosphotase: 160, Alamine Aminotransferase: 45, Aspartate Aminotransferase: 40, Total Proteins: 7.8, Albumin: 4.5, Albumin and Globulin Ratio: 1.2]
+
+Patient 27: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Total Bilirubin: 1.5, Direct Bilirubin: 0.7, Alkaline Phosphotase: 200, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 45, Total Proteins: 8.5, Albumin: 5.0, Albumin and Globulin Ratio: 1.4]
+
+Patient 28: [Disease: Sepsis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 32, Gender: Male, Total Bilirubin: 1.8, Direct Bilirubin: 0.9, Alkaline Phosphotase: 220, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 50, Total Proteins: 9.2, Albumin: 5.5, Albumin and Globulin Ratio: 1.5]
+
+Patient 29: [Disease: Endocarditis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 38, Gender: Female, Total Bilirubin: 1.2, Direct Bilirubin: 0.6, Alkaline Phosphotase: 180, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 8.1, Albumin: 4.8, Albumin and Globulin Ratio: 1.3]
+
+Patient 30: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Male, Total Bilirubin: 0.9, Direct Bilirubin: 0.4, Alkaline Phosphotase: 140, Alamine Aminotransferase: 35, Aspartate Aminotransferase: 30, Total Proteins: 7.4, Albumin: 4.3, Albumin and Globulin Ratio: 1.2]
+
+Patient 31: [Disease: Cholecystitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Total Bilirubin: 1.0, Direct Bilirubin: 0.5, Alkaline Phosphotase: 160, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 35, Total Proteins: 7.9, Albumin: 4.6, Albumin and Globulin Ratio: 1.3]
+
+Patient 32: [Disease: Diverticulitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Male, Total Bilirubin: 1.1, Direct Bilirubin: 0.6, Alkaline Phosphotase: 170, Alamine Aminotransferase: 45, Aspartate Aminotransferase: 40, Total Proteins: 8.0, Albumin: 4.7, Albumin and Globulin Ratio: 1.4]
+
+Patient 33: [Disease: Osteomyelitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 28, Gender: Female, Total Bilirubin: 1.3, Direct Bilirubin: 0.7, Alkaline Phosphotase: 190, Alamine Aminotransferase: 55, Aspartate Aminotransferase: 45, Total Proteins: 8.4, Albumin: 5.1, Albumin and Globulin Ratio: 1.6]
 ```
 
 
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 61: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 33, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 62: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 34, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 63: [Disease: Chronic Bronchitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 36, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 64: [Disease: Otitis Media, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 32, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 65: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 37, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 66: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 67: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 39, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 68: [Disease: Chronic Kidney Disease (CKD), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 69: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 41, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 70: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 42, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 71: [Disease: Cervical Spondylosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 43, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 72: [Disease: Thyroiditis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-
-
-```
-Patient 73: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 74: [Disease: Migraine, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 75: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 76: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 28, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 77: [Disease: Gastroesophageal Reflux Disease, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 38, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 78: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 32, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 79: [Disease: Thyroiditis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 80: [Disease: Vitiligo, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 81: [Disease: Asthma, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 82: [Disease: Crohn's Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 36, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 83: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 48, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 84: [Disease: Sjögren's Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 85: [Disease: Raynaud's Phenomenon, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 22, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-```
-
-I've generated new diseases such as Ulcerative Colitis, Migraine, Rheumatoid Arthritis, and others. Let me know if you need anything else!
+Patient 34: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 28, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 35: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 32, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 36: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 37: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 31, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 38: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 39: [Disease: Pancreatitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 29, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 40: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 32, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 41: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 42: [Disease: Sjogren's Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 31, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 43: [Disease: Chronic Obstructive Pulmonary Disease, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 44: [Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 45: [Disease: Lymphoma, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 32, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
 
-Patient 85: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 86: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 87: [Disease: Sepsis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 88: [Disease: Lymphoma, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 89: [Disease: Pneumothorax, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-Patient 90: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 55, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 91: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-Patient 92: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 28, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 93: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 94: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 95: [Disease: Pulmonary Embolism, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 32, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 96: [Disease: Gout, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 48, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 97: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 36, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 98: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 99: [Disease: Cystic Fibrosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 22, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-
-Patient 100: [Disease: Interstitial Lung Disease, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 58, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 45: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 46: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 32, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 47: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 48: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 31, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 49: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 50: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 33, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 51: [Disease: Osteoporosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 52: [Disease: Parkinson's Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 32, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 53: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 54: [Disease: Crohn's Disease, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 31, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 55: [Disease: Thyroiditis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 56: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 33, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
 
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 97: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 98: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 50, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 99: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 100: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 101: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 102: [Disease: Sepsis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: Yes, Age: 60, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 103: [Disease: Gastroesophageal Reflux Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 35, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 104: [Disease: Chronic Obstructive Pulmonary Disease, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 65, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 105: [Disease: Kidney Stones, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 106: [Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 107: [Disease: Diverticulitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 40, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 108: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 20, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 109: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 110: [Disease: Crohn's Disease, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-
-
-
-Patient 109: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 110: [Disease: Psoriasis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 42, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 111: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 112: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 48, Gender: Male, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 113: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 114: [Disease: Malaria, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 52, Gender: Male, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 115: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 116: [Disease: Chronic Obstructive Pulmonary Disease, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 58, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 117: [Disease: Gout, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 118: [Disease: Pancreatitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 119: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 65, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 120: [Disease: Ulcerative Colitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 68, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 56: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 32, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 57: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 33, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 58: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 33, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 59: [Disease: Kidney Stones, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 34, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 60: [Disease: Hyperthyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 34, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 61: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 35, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 62: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 35, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 63: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 36, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 64: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 36, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 65: [Disease: Ulcerative Colitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 37, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 66: [Disease: Cystic Fibrosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 37, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
 
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-```
-Patient 121: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 122: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 42, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 123: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 43, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 124: [Disease: Lymphoma, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 44, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 125: [Disease: Otitis Media, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 126: [Disease: Hyperthyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 46, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 127: [Disease: Gastroenteritis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 47, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 128: [Disease: Meningitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 48, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 129: [Disease: Tinea Pedis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 49, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 130: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 131: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 51, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 132: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 52, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 133: [Disease: Cervical Cancer, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 53, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-```
+Patient 67: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 68: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Patient 69: [Disease: Migraine, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 32, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 70: [Disease: Thyroiditis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 71: [Disease: Gout, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 31, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 72: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 36, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 73: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 33, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 74: [Disease: Chronic Fatigue Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 34, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Patient 75: [Disease: Shingles, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 37, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 76: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 77: [Disease: Meniere's Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 39, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 78: [Disease: Hyperthyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
 
 
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 78: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 79: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 80: [Disease: Gout, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 81: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 82: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 38, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 83: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 84: [Disease: Chlamydia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 85: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 28, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 86: [Disease: Sarcoidosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 48, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 87: [Disease: Lymphoma, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 32, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 88: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 36, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 89: [Disease: Vitiligo, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 39, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 90: [Disease: Crohn's Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 89: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 90: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 91: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Gender: Male, Blood Pressure: Low, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 92: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 93: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 94: [Disease: Gout, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 95: [Disease: Chronic Bronchitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 96: [Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 28, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 97: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 32, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 98: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 36, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 99: [Disease: Sarcoidosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 41, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 100: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
 ```
-Patient 133: [Disease: Lyme Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 134: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 135: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 136: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 137: [Disease: Crohn's Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 35, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 138: [Disease: Osteoporosis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 70, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 139: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 140: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 28, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 141: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 142: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 42, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 143: [Disease: Sarcoidosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 52, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 144: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 29, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 145: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-```
-
-I've generated new diseases such as Lyme Disease, Pneumonia, Hypothyroidism, Psoriasis, Crohn's Disease, Osteoporosis, Rheumatoid Arthritis, Tuberculosis, Ulcerative Colitis, Meningitis, Sarcoidosis, Pancreatitis, and Gastroesophageal Reflux Disease (GERD).
-
-
-Patient 145: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 146: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 147: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 38, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 148: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 149: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 48, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 150: [Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 151: [Disease: Pulmonary Embolism, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 152: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 153: [Disease: Ulcerative Colitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 154: [Disease: Vasculitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 155: [Disease: Vitiligo, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 38, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 156: [Disease: Whipple's Disease, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 157: [Disease: Wilson's Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-
-
-```
-Patient 157: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 158: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 40, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 159: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 160: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 39, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 161: [Disease: Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 41, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 162: [Disease: Diverticulitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 163: [Disease: Osteoporosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 43, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
-Patient 164: [Disease: Gastroenteritis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 46, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 165: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 166: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 167: [Disease: Thyroiditis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 168: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 169: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
-Patient 170: [Disease: Varicose Veins, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
-```
-
-I've generated new diseases such as Hypothyroidism, Appendicitis, Pneumonia, and others, and varied the patient characteristics to create a diverse dataset.
-
-
-Patient 169: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 170: [Disease: Multiple Sclerosis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 171: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 172: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 173: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 43, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 174: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 175: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 176: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 177: [Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 178: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 46, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 179: [Disease: Endometriosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 46, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 180: [Disease: Prostate Cancer, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 47, Gender: Male, Blood Pressure: High, Cholesterol Level: Low, Outcome Variable: Positive]
-Patient 181: [Disease: Cystic Fibrosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 48, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-
-
-
-Patient 181: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 182: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 183: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 184: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 35, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 185: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-
-Patient 186: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 187: [Disease: Lymphoma, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 188: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-
-Patient 189: [Disease: Endometriosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 190: [Disease: Prostate Cancer, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 191: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 192: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-Patient 193: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 20, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-
-
-
-```
-Patient 193: [Disease: Meniere's Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 194: [Disease: Migraine, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 195: [Disease: Multiple Sclerosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 48, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 196: [Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 52, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 197: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 198: [Disease: Rheumatoid Arthritis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 49, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 199: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 46, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 200: [Disease: Thyroiditis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 43, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 201: [Disease: Ulcerative Colitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 51, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 202: [Disease: Vitiligo, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 203: [Disease: Wegener's Granulomatosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 47, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 204: [Disease: Xanthoma, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 53, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 205: [Disease: Yellow Fever, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 48, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 100: [Disease: Gastroesophageal Reflux Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 101: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 42, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 102: [Disease: Psoriasis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 103: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 48, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 104: [Disease: Fibromyalgia, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Positive]
+Patient 105: [Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 52, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 106: [Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 107: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 108: [Disease: Cystic Fibrosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Positive]
+Patient 109: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 62, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 110: [Disease: Chronic Obstructive Pulmonary Disease, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 65, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 ```
 
 
-
-Patient 205: [Disease: Rheumatoid Arthritis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 206: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 41, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 207: [Disease: Chronic Bronchitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 47, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 208: [Disease: Gout, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 209: [Disease: Cervical Spondylosis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 46, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 210: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 43, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 211: [Disease: Carpal Tunnel Syndrome, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 49, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 212: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 41, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 213: [Disease: Lupus, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 214: [Disease: Osteomyelitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 48, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 215: [Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 216: [Disease: Bell's Palsy, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 46, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 217: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 47, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-
-
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
 ```
-Patient 217: [Disease: Gastroesophageal Reflux Disease, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 52, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 218: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 219: [Disease: Kidney Stones, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 220: [Disease: Lymphoma, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 221: [Disease: Migraine, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 45, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 222: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 223: [Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 65, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 224: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 55, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 225: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 226: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 227: [Disease: Sjogren's Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 228: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 111: [Disease: Pancreatitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Patient 112: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 40, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 113: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Patient 114: [Disease: Rheumatoid Arthritis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 115: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 41, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Patient 116: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 39, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 117: [Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Female, Blood Pressure: Low, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 118: [Disease: Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 119: [Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Positive]
+Patient 120: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 39, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 121: [Disease: Chronic Obstructive Pulmonary Disease, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 43, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 122: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Positive]
+```
+
+I've generated new diseases and added them to the existing format. Let me know if you need any further assistance!
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 122: [Age: 35, Gender: Male, Total Bilirubin: 1.2, Direct Bilirubin: 0.5, Alkaline Phosphotase: 120, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 25, Total Proteins: 7.5, Albumin: 3.5, Albumin and Globulin Ratio: 0.8]
+Disease: Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 123: [Age: 42, Gender: Female, Total Bilirubin: 0.8, Direct Bilirubin: 0.3, Alkaline Phosphotase: 150, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 8.2, Albumin: 4.2, Albumin and Globulin Ratio: 0.9]
+Disease: Pancreatitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 124: [Age: 45, Gender: Male, Total Bilirubin: 1.5, Direct Bilirubin: 0.8, Alkaline Phosphotase: 180, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 35, Total Proteins: 9.1, Albumin: 4.8, Albumin and Globulin Ratio: 0.8]
+Disease: Cirrhosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative
+
+Patient 125: [Age: 30, Gender: Female, Total Bilirubin: 0.9, Direct Bilirubin: 0.4, Alkaline Phosphotase: 100, Alamine Aminotransferase: 20, Aspartate Aminotransferase: 20, Total Proteins: 7.2, Albumin: 3.2, Albumin and Globulin Ratio: 0.7]
+Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 126: [Age: 50, Gender: Male, Total Bilirubin: 1.1, Direct Bilirubin: 0.6, Alkaline Phosphotase: 140, Alamine Aminotransferase: 35, Aspartate Aminotransferase: 30, Total Proteins: 8.5, Albumin: 4.1, Albumin and Globulin Ratio: 0.8]
+Disease: Gastroenteritis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 127: [Age: 28, Gender: Female, Total Bilirubin: 0.7, Direct Bilirubin: 0.3, Alkaline Phosphotase: 90, Alamine Aminotransferase: 25, Aspartate Aminotransferase: 25, Total Proteins: 7.1, Albumin: 3.1, Albumin and Globulin Ratio: 0.7]
+Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 128: [Age: 55, Gender: Male, Total Bilirubin: 1.4, Direct Bilirubin: 0.9, Alkaline Phosphotase: 160, Alamine Aminotransferase: 45, Aspartate Aminotransferase: 40, Total Proteins: 9.3, Albumin: 5.2, Albumin and Globulin Ratio: 0.9]
+Disease: Cholangitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative
+
+Patient 129: [Age: 32, Gender: Female, Total Bilirubin: 0.6, Direct Bilirubin: 0.2, Alkaline Phosphotase: 110, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 25, Total Proteins: 7.6, Albumin: 3.6, Albumin and Globulin Ratio: 0.8]
+Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 130: [Age: 48, Gender: Male, Total Bilirubin: 1.3, Direct Bilirubin: 0.7, Alkaline Phosphotase: 130, Alamine Aminotransferase: 35, Aspartate Aminotransferase: 30, Total Proteins: 8.8, Albumin: 4.5, Albumin and Globulin Ratio: 0.8]
+Disease: Sepsis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 131: [Age: 25, Gender: Female, Total Bilirubin: 0.8, Direct Bilirubin: 0.4, Alkaline Phosphotase: 100, Alamine Aminotransferase: 25, Aspartate Aminotransferase: 25, Total Proteins: 7.4, Albumin: 3.4, Albumin and Globulin Ratio: 0.7]
+Disease: Lyme Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 132: [Age: 60, Gender: Male, Total Bilirubin: 1.6, Direct Bilirubin: 1.1, Alkaline Phosphotase: 180, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 9.6, Albumin: 5.6, Albumin and Globulin Ratio: 0.9]
+Disease: Hepatocellular Carcinoma, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 133: [Age: 35, Gender: Male, Total Bilirubin: 1.5, Direct Bilirubin: 0.8, Alkaline Phosphotase: 120, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 35, Total Proteins: 7.5, Albumin: 4.2, Albumin and Globulin Ratio: 0.5]
+Disease: Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Positive
+
+Patient 134: [Age: 28, Gender: Female, Total Bilirubin: 1.2, Direct Bilirubin: 0.6, Alkaline Phosphotase: 150, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 50, Total Proteins: 8.5, Albumin: 4.5, Albumin and Globulin Ratio: 0.6]
+Disease: Autoimmune Hepatitis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Outcome Variable: Positive
+
+Patient 135: [Age: 45, Gender: Male, Total Bilirubin: 2.0, Direct Bilirubin: 1.2, Alkaline Phosphotase: 180, Alamine Aminotransferase: 80, Aspartate Aminotransferase: 70, Total Proteins: 9.0, Albumin: 4.8, Albumin and Globulin Ratio: 0.7]
+Disease: Primary Biliary Cirrhosis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Positive
+
+Patient 136: [Age: 32, Gender: Female, Total Bilirubin: 1.8, Direct Bilirubin: 1.0, Alkaline Phosphotase: 160, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 60, Total Proteins: 8.2, Albumin: 4.3, Albumin and Globulin Ratio: 0.5]
+Disease: Primary Sclerosing Cholangitis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Outcome Variable: Positive
+
+Patient 137: [Age: 50, Gender: Male, Total Bilirubin: 2.5, Direct Bilirubin: 1.5, Alkaline Phosphotase: 220, Alamine Aminotransferase: 100, Aspartate Aminotransferase: 90, Total Proteins: 9.5, Albumin: 5.0, Albumin and Globulin Ratio: 0.8]
+Disease: Cirrhosis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Positive
+
+Patient 138: [Age: 25, Gender: Female, Total Bilirubin: 1.0, Direct Bilirubin: 0.4, Alkaline Phosphotase: 100, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 25, Total Proteins: 7.0, Albumin: 3.8, Albumin and Globulin Ratio: 0.4]
+Disease: Viral Hepatitis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Outcome Variable: Positive
+
+Patient 139: [Age: 38, Gender: Male, Total Bilirubin: 1.9, Direct Bilirubin: 1.1, Alkaline Phosphotase: 140, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 8.0, Albumin: 4.1, Albumin and Globulin Ratio: 0.5]
+Disease: Cholestasis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Positive
+
+Patient 140: [Age: 42, Gender: Female, Total Bilirubin: 2.2, Direct Bilirubin: 1.4, Alkaline Phosphotase: 200, Alamine Aminotransferase: 90, Aspartate Aminotransferase: 80, Total Proteins: 9.2, Albumin: 5.2, Albumin and Globulin Ratio: 0.7]
+Disease: Biliary Duct Cancer, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Outcome Variable: Positive
+
+Patient 141: [Age: 29, Gender: Male, Total Bilirubin: 1.6, Direct Bilirubin: 0.9, Alkaline Phosphotase: 130, Alamine Aminotransferase: 45, Aspartate Aminotransferase: 35, Total Proteins: 7.8, Albumin: 4.0, Albumin and Globulin Ratio: 0.5]
+Disease: Gallstones, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Positive
+
+Patient 142: [Age: 41, Gender: Female, Total Bilirubin: 2.1, Direct Bilirubin: 1.3, Alkaline Phosphotase: 190, Alamine Aminotransferase: 85, Aspartate Aminotransferase: 75, Total Proteins: 8.8, Albumin: 4.9, Albumin and Globulin Ratio: 0.6]
+Disease: Pancreatitis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Outcome Variable: Positive
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 144: [Age: 35, Gender: Female, Total Bilirubin: 1.2, Direct Bilirubin: 0.8, Alkaline Phosphotase: 120, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 7.5, Albumin: 3.5, Albumin and Globulin Ratio: 1.2]
+Disease: Viral Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 145: [Age: 45, Gender: Male, Total Bilirubin: 1.5, Direct Bilirubin: 1.0, Alkaline Phosphotase: 150, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 8.0, Albumin: 3.0, Albumin and Globulin Ratio: 1.3]
+Disease: Autoimmune Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 146: [Age: 30, Gender: Female, Total Bilirubin: 0.9, Direct Bilirubin: 0.6, Alkaline Phosphotase: 100, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 20, Total Proteins: 7.0, Albumin: 3.2, Albumin and Globulin Ratio: 1.1]
+Disease: Gallstones, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 147: [Age: 50, Gender: Male, Total Bilirubin: 1.8, Direct Bilirubin: 1.2, Alkaline Phosphotase: 180, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 50, Total Proteins: 8.5, Albumin: 2.5, Albumin and Globulin Ratio: 1.4]
+Disease: Primary Biliary Cirrhosis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 148: [Age: 25, Gender: Female, Total Bilirubin: 1.1, Direct Bilirubin: 0.7, Alkaline Phosphotase: 110, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 7.2, Albumin: 3.0, Albumin and Globulin Ratio: 1.2]
+Disease: Wilson's Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 149: [Age: 55, Gender: Male, Total Bilirubin: 2.0, Direct Bilirubin: 1.5, Alkaline Phosphotase: 200, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 60, Total Proteins: 9.0, Albumin: 2.0, Albumin and Globulin Ratio: 1.5]
+Disease: Cirrhosis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 150: [Age: 28, Gender: Female, Total Bilirubin: 0.8, Direct Bilirubin: 0.5, Alkaline Phosphotase: 90, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 20, Total Proteins: 6.5, Albumin: 3.5, Albumin and Globulin Ratio: 1.1]
+Disease: Cholestasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 151: [Age: 42, Gender: Male, Total Bilirubin: 1.4, Direct Bilirubin: 1.0, Alkaline Phosphotase: 140, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 7.8, Albumin: 3.2, Albumin and Globulin Ratio: 1.3]
+Disease: Primary Sclerosing Cholangitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 152: [Age: 38, Gender: Female, Total Bilirubin: 1.6, Direct Bilirubin: 1.2, Alkaline Phosphotase: 160, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 50, Total Proteins: 8.2, Albumin: 3.0, Albumin and Globulin Ratio: 1.4]
+Disease: Caroli's Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 153: [Age: 32, Gender: Male, Total Bilirubin: 0.7, Direct Bilirubin: 0.4, Alkaline Phosphotase: 80, Alamine Aminotransferase: 20, Aspartate Aminotransferase: 10, Total Proteins: 6.2, Albumin: 3.8, Albumin and Globulin Ratio: 1.0]
+Disease: Neonatal Hepatitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 154: [Age: 48, Gender: Female, Total Bilirubin: 1.9, Direct Bilirubin: 1.4, Alkaline Phosphotase: 190, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 60, Total Proteins: 9.2, Albumin: 2.2, Albumin and Globulin Ratio: 1.6]
+Disease: Biliary Atresia, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 155: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 38, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 156: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 157: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 158: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 159: [Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 160: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 43, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 161: [Disease: Thyroiditis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 39, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 162: [Disease: Interstitial Cystitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 46, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Patient 163: [Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 164: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 44, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 165: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 47, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Patient 166: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 42, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 166: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Positive]
+Patient 167: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 41, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 168: [Disease: Bronchiectasis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 44, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 169: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 46, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 170: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 47, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 171: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 48, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 172: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 49, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 173: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 174: [Disease: Sjogren's Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 51, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 175: [Disease: Interstitial Cystitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 52, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 176: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 53, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 177: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 54, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 177: [Age: 50, Gender: Female, Total Bilirubin: 1.2, Direct Bilirubin: 0.5, Alkaline Phosphotase: 120, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 30, Total Proteins: 7.5, Albumin: 4.2, Albumin and Globulin Ratio: 1.2]
+Disease: Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+Patient 178: [Age: 40, Gender: Male, Total Bilirubin: 0.8, Direct Bilirubin: 0.3, Alkaline Phosphotase: 150, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 40, Total Proteins: 8.5, Albumin: 4.5, Albumin and Globulin Ratio: 1.3]
+Disease: Cirrhosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative
+
+Patient 179: [Age: 55, Gender: Female, Total Bilirubin: 1.5, Direct Bilirubin: 0.8, Alkaline Phosphotase: 180, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 50, Total Proteins: 9.2, Albumin: 4.8, Albumin and Globulin Ratio: 1.5]
+Disease: Primary Biliary Cholangitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+Patient 180: [Age: 60, Gender: Male, Total Bilirubin: 2.0, Direct Bilirubin: 1.2, Alkaline Phosphotase: 200, Alamine Aminotransferase: 80, Aspartate Aminotransferase: 60, Total Proteins: 10.5, Albumin: 5.2, Albumin and Globulin Ratio: 1.6]
+Disease: Primary Sclerosing Cholangitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative
+
+Patient 181: [Age: 35, Gender: Female, Total Bilirubin: 0.6, Direct Bilirubin: 0.2, Alkaline Phosphotase: 100, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 6.5, Albumin: 3.8, Albumin and Globulin Ratio: 1.1]
+Disease: Autoimmune Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+Patient 182: [Age: 48, Gender: Male, Total Bilirubin: 1.1, Direct Bilirubin: 0.4, Alkaline Phosphotase: 130, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 35, Total Proteins: 7.8, Albumin: 4.3, Albumin and Globulin Ratio: 1.2]
+Disease: Primary Biliary Cirrhosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative
+
+Patient 183: [Age: 50, Gender: Female, Total Bilirubin: 1.4, Direct Bilirubin: 0.7, Alkaline Phosphotase: 160, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 45, Total Proteins: 8.2, Albumin: 4.6, Albumin and Globulin Ratio: 1.3]
+Disease: Cholestatic Liver Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+Patient 184: [Age: 42, Gender: Male, Total Bilirubin: 0.9, Direct Bilirubin: 0.3, Alkaline Phosphotase: 140, Alamine Aminotransferase: 55, Aspartate Aminotransferase: 40, Total Proteins: 7.2, Albumin: 4.1, Albumin and Globulin Ratio: 1.2]
+Disease: Gilbert's Syndrome, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative
+
+Patient 185: [Age: 58, Gender: Female, Total Bilirubin: 2.2, Direct Bilirubin: 1.5, Alkaline Phosphotase: 220, Alamine Aminotransferase: 90, Aspartate Aminotransferase: 70, Total Proteins: 11.5, Albumin: 5.8, Albumin and Globulin Ratio: 1.7]
+Disease: Primary Biliary Cholangitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+Patient 186: [Age: 38, Gender: Male, Total Bilirubin: 0.7, Direct Bilirubin: 0.2, Alkaline Phosphotase: 110, Alamine Aminotransferase: 45, Aspartate Aminotransferase: 35, Total Proteins: 6.8, Albumin: 4.0, Albumin and Globulin Ratio: 1.2]
+Disease: Autoimmune Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative
+
+Patient 187: [Age: 52, Gender: Female, Total Bilirubin: 1.6, Direct Bilirubin: 0.9, Alkaline Phosphotase: 180, Alamine Aminotransferase: 65, Aspartate Aminotransferase: 50, Total Proteins: 9.0, Albumin: 4.9, Albumin and Globulin Ratio: 1.4]
+Disease: Primary Sclerosing Cholangitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 188: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 189: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 190: [Disease: Sjogren's Syndrome, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 48, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 191: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 52, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 192: [Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 193: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 46, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 194: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 54, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 195: [Disease: Gastroesophageal Reflux Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 51, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 196: [Disease: Hyperthyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 49, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 197: [Disease: Pancreatitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 56, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 198: [Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 53, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 199: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 199: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 200: [Disease: Chronic Kidney Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 201: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 202: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 203: [Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 204: [Disease: Gout, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 205: [Disease: Hyperthyroidism, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 206: [Disease: Hypocalcemia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 207: [Disease: Myasthenia Gravis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 208: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 209: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 210: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 210: [Disease: Cystic Fibrosis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 52, Gender: Male, Total Bilirubin: 1.2, Direct Bilirubin: 0.5, Alkaline Phosphotase: 120, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 25, Total Proteins: 7.5, Albumin: 3.5, Albumin and Globulin Ratio: 0.45]
+
+Patient 211: [Disease: Bronchiectasis, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 55, Gender: Female, Total Bilirubin: 0.8, Direct Bilirubin: 0.3, Alkaline Phosphotase: 150, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 35, Total Proteins: 8.2, Albumin: 4.2, Albumin and Globulin Ratio: 0.52]
+
+Patient 212: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 58, Gender: Male, Total Bilirubin: 2.5, Direct Bilirubin: 1.2, Alkaline Phosphotase: 180, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 50, Total Proteins: 9.8, Albumin: 5.5, Albumin and Globulin Ratio: 0.57]
+
+Patient 213: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Female, Total Bilirubin: 1.5, Direct Bilirubin: 0.7, Alkaline Phosphotase: 200, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 65, Total Proteins: 10.5, Albumin: 6.2, Albumin and Globulin Ratio: 0.6]
+
+Patient 214: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 62, Gender: Male, Total Bilirubin: 1.8, Direct Bilirubin: 0.9, Alkaline Phosphotase: 220, Alamine Aminotransferase: 80, Aspartate Aminotransferase: 75, Total Proteins: 11.2, Albumin: 7.1, Albumin and Globulin Ratio: 0.64]
+
+Patient 215: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Female, Total Bilirubin: 3.2, Direct Bilirubin: 1.5, Alkaline Phosphotase: 250, Alamine Aminotransferase: 100, Aspartate Aminotransferase: 90, Total Proteins: 12.1, Albumin: 8.5, Albumin and Globulin Ratio: 0.7]
+
+Patient 216: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 68, Gender: Male, Total Bilirubin: 1.0, Direct Bilirubin: 0.4, Alkaline Phosphotase: 110, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 25, Total Proteins: 8.5, Albumin: 4.5, Albumin and Globulin Ratio: 0.53]
+
+Patient 217: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Female, Total Bilirubin: 0.9, Direct Bilirubin: 0.3, Alkaline Phosphotase: 100, Alamine Aminotransferase: 20, Aspartate Aminotransferase: 15, Total Proteins: 7.8, Albumin: 4.0, Albumin and Globulin Ratio: 0.51]
+
+Patient 218: [Disease: Inflammatory Bowel Disease (IBD), Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 72, Gender: Male, Total Bilirubin: 2.2, Direct Bilirubin: 1.0, Alkaline Phosphotase: 140, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 35, Total Proteins: 9.2, Albumin: 5.8, Albumin and Globulin Ratio: 0.63]
+
+Patient 219: [Disease: Ulcerative Colitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 75, Gender: Female, Total Bilirubin: 1.4, Direct Bilirubin: 0.6, Alkaline Phosphotase: 160, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 45, Total Proteins: 10.1, Albumin: 6.5, Albumin and Globulin Ratio: 0.65]
+
+Patient 220: [Disease: Crohn's Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 78, Gender: Male, Total Bilirubin: 3.0, Direct Bilirubin: 1.3, Alkaline Phosphotase: 200, Alamine Aminotransferase: 80, Aspartate Aminotransferase: 75, Total Proteins: 11.5, Albumin: 8.2, Albumin and Globulin Ratio: 0.72]
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+```
+Patient 221: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 222: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 223: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Patient 224: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 225: [Disease: Ulcerative Colitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 226: [Disease: Malaria, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 20, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 227: [Disease: Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 228: [Disease: Cystic Fibrosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 229: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 230: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 231: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 30, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Patient 232: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 50, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
 ```
 
 
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 232: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 233: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Gender: Male, Blood Pressure: Low, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 234: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 235: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 236: [Disease: Leukemia, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 65, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 237: [Disease: Lymphoma, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 238: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 35, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 239: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 240: [Disease: Diabetes, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 241: [Disease: Kidney Stones, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 242: [Disease: Hepatitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 243: [Disease: Osteoporosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
 ```
-Patient 229: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 230: [Disease: Hypertensive Heart Disease, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 231: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Male, Blood Pressure: Low, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 232: [Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 233: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 234: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 35, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 235: [Disease: Gastroesophageal Reflux Disease, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 236: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: Low, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 237: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 238: [Disease: Chronic Obstructive Pulmonary Disease, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 239: [Disease: Ulcerative Colitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 240: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 243: [Disease: Guillain-Barré Syndrome, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 244: [Disease: Myasthenia Gravis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 245: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 246: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 247: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 65, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 248: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 68, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 249: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 70, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 250: [Disease: Chronic Kidney Disease (CKD), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 72, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 251: [Disease: Thyroiditis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 75, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 252: [Disease: Polymyositis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 78, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 253: [Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 80, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 254: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 85, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
 ```
 
-I've introduced new diseases such as Psoriasis, Hypertensive Heart Disease, Irritable Bowel Syndrome, Gastroesophageal Reflux Disease, Meningitis, and Sarcoidosis. I've also varied the patient demographics, symptoms, and outcomes to reflect a more diverse set of cases.
 
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 241: [Disease: Malaria, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 254: [Age: 60, Gender: Male, Total Bilirubin: 2.5, Direct Bilirubin: 1.2, Alkaline Phosphotase: 120, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 8.2, Albumin: 4.5, Albumin and Globulin Ratio: 0.4]
+Disease: Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Positive
 
-Patient 242: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 255: [Age: 58, Gender: Female, Total Bilirubin: 1.8, Direct Bilirubin: 0.9, Alkaline Phosphotase: 100, Alamine Aminotransferase: 35, Aspartate Aminotransferase: 25, Total Proteins: 7.8, Albumin: 4.2, Albumin and Globulin Ratio: 0.3]
+Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Outcome Variable: Positive
 
-Patient 243: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 48, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 256: [Age: 62, Gender: Male, Total Bilirubin: 3.1, Direct Bilirubin: 1.5, Alkaline Phosphotase: 150, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 9.5, Albumin: 5.1, Albumin and Globulin Ratio: 0.5]
+Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Negative
 
-Patient 244: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 50, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 257: [Age: 59, Gender: Female, Total Bilirubin: 2.2, Direct Bilirubin: 1.1, Alkaline Phosphotase: 110, Alamine Aminotransferase: 45, Aspartate Aminotransferase: 35, Total Proteins: 8.5, Albumin: 4.8, Albumin and Globulin Ratio: 0.4]
+Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Negative
 
-Patient 245: [Disease: Appendicitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 51, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 258: [Age: 61, Gender: Male, Total Bilirubin: 1.9, Direct Bilirubin: 0.8, Alkaline Phosphotase: 90, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 25, Total Proteins: 7.9, Albumin: 4.3, Albumin and Globulin Ratio: 0.3]
+Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Outcome Variable: Positive
 
-Patient 246: [Disease: Hyperthyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 259: [Age: 56, Gender: Female, Total Bilirubin: 2.9, Direct Bilirubin: 1.6, Alkaline Phosphotase: 130, Alamine Aminotransferase: 55, Aspartate Aminotransferase: 45, Total Proteins: 9.2, Albumin: 5.3, Albumin and Globulin Ratio: 0.5]
+Disease: Influenza, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Negative
 
-Patient 247: [Disease: Leukemia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 40, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 260: [Age: 63, Gender: Male, Total Bilirubin: 3.5, Direct Bilirubin: 1.8, Alkaline Phosphotase: 170, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 50, Total Proteins: 10.1, Albumin: 5.6, Albumin and Globulin Ratio: 0.6]
+Disease: Liver Cirrhosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Negative
 
-Patient 248: [Disease: Osteoporosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 261: [Age: 57, Gender: Female, Total Bilirubin: 2.1, Direct Bilirubin: 1.0, Alkaline Phosphotase: 100, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 8.3, Albumin: 4.6, Albumin and Globulin Ratio: 0.4]
+Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Outcome Variable: Positive
 
-Patient 249: [Disease: Chlamydia, Fever: Yes, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 25, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 262: [Age: 60, Gender: Male, Total Bilirubin: 2.8, Direct Bilirubin: 1.4, Alkaline Phosphotase: 120, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 9.0, Albumin: 5.0, Albumin and Globulin Ratio: 0.5]
+Disease: Gastroenteritis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Negative
 
-Patient 250: [Disease: Cystic Fibrosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 30, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 263: [Age: 58, Gender: Female, Total Bilirubin: 1.6, Direct Bilirubin: 0.7, Alkaline Phosphotase: 80, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 25, Total Proteins: 7.4, Albumin: 4.0, Albumin and Globulin Ratio: 0.3]
+Disease: Asthma, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Outcome Variable: Negative
 
-Patient 251: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 264: [Age: 62, Gender: Male, Total Bilirubin: 3.3, Direct Bilirubin: 1.7, Alkaline Phosphotase: 140, Alamine Aminotransferase: 55, Aspartate Aminotransferase: 45, Total Proteins: 9.8, Albumin: 5.4, Albumin and Globulin Ratio: 0.5]
+Disease: Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Outcome Variable: Negative
 
-Patient 252: [Disease: Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 253: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 265: [Age: 62, Gender: Male, Total Bilirubin: 1.5, Direct Bilirubin: 0.5, Alkaline Phosphotase: 120, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 7.5, Albumin: 4.2, Albumin and Globulin Ratio: 1.2, Disease: Hepatitis C, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Positive]
 
+Patient 266: [Age: 58, Gender: Female, Total Bilirubin: 1.2, Direct Bilirubin: 0.2, Alkaline Phosphotase: 150, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 8.2, Albumin: 4.5, Albumin and Globulin Ratio: 1.1, Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
 
+Patient 267: [Age: 60, Gender: Male, Total Bilirubin: 1.8, Direct Bilirubin: 0.8, Alkaline Phosphotase: 100, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 20, Total Proteins: 6.5, Albumin: 3.8, Albumin and Globulin Ratio: 1.0, Disease: Multiple Sclerosis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
-Patient 253: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 58, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 254: [Disease: Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 255: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 256: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
-Patient 257: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 61, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 258: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 63, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 259: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 57, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 260: [Disease: Osteoporosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
-Patient 261: [Disease: Gastroenteritis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 262: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 61, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
-Patient 263: [Disease: Heart Failure, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 62, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 264: [Disease: Influenza, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 59, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 265: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 63, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 268: [Age: 59, Gender: Female, Total Bilirubin: 1.0, Direct Bilirubin: 0.1, Alkaline Phosphotase: 110, Alamine Aminotransferase: 45, Aspartate Aminotransferase: 35, Total Proteins: 7.2, Albumin: 4.1, Albumin and Globulin Ratio: 1.0, Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
 
+Patient 269: [Age: 61, Gender: Male, Total Bilirubin: 1.6, Direct Bilirubin: 0.6, Alkaline Phosphotase: 130, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 50, Total Proteins: 8.5, Albumin: 4.8, Albumin and Globulin Ratio: 1.2, Disease: Psoriasis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 61, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
+Patient 270: [Age: 57, Gender: Female, Total Bilirubin: 1.3, Direct Bilirubin: 0.3, Alkaline Phosphotase: 90, Alamine Aminotransferase: 35, Aspartate Aminotransferase: 25, Total Proteins: 7.8, Albumin: 4.3, Albumin and Globulin Ratio: 1.1, Disease: Thyroiditis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 57, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
 
-Patient 265: [Disease: Thyroiditis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 266: [Disease: Psoriasis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
-Patient 267: [Disease: Cervical Spondylosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 61, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 268: [Disease: Chronic Kidney Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 269: [Disease: Gastroesophageal Reflux Disease, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
-Patient 270: [Disease: Hyperlipidemia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 63, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 271: [Disease: Rheumatoid Arthritis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 57, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 272: [Disease: Chronic Bronchitis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 56, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Positive]
-Patient 273: [Disease: Hypertensive Heart Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 61, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 274: [Disease: Osteomyelitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 275: [Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
-Patient 276: [Disease: Chronic Obstructive Pulmonary Disease, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 59, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 277: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
+Patient 271: [Age: 63, Gender: Male, Total Bilirubin: 1.9, Direct Bilirubin: 0.9, Alkaline Phosphotase: 140, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 60, Total Proteins: 9.2, Albumin: 5.1, Albumin and Globulin Ratio: 1.3, Disease: Chronic Obstructive Pulmonary Disease, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 63, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
+Patient 272: [Age: 58, Gender: Female, Total Bilirubin: 1.1, Direct Bilirubin: 0.1, Alkaline Phosphotase: 100, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 7.0, Albumin: 4.0, Albumin and Globulin Ratio: 1.0, Disease: Osteopenia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
 
+Patient 273: [Age: 62, Gender: Male, Total Bilirubin: 1.7, Direct Bilirubin: 0.7, Alkaline Phosphotase: 120, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 8.0, Albumin: 4.4, Albumin and Globulin Ratio: 1.1, Disease: Gout, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
-Patient 277: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 274: [Age: 60, Gender: Female, Total Bilirubin: 1.4, Direct Bilirubin: 0.4, Alkaline Phosphotase: 110, Alamine Aminotransferase: 45, Aspartate Aminotransferase: 35, Total Proteins: 7.5, Albumin: 4.2, Albumin and Globulin Ratio: 1.1, Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
 
-Patient 278: [Disease: Rheumatoid Arthritis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 275: [Age: 61, Gender: Male, Total Bilirubin: 1.5, Direct Bilirubin: 0.5, Alkaline Phosphotase: 130, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 50, Total Proteins: 8.8, Albumin: 4.9, Albumin and Globulin Ratio: 1.2, Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 61, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
-Patient 279: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 61, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 276: [Age: 59, Gender: Female, Total Bilirubin: 1.2, Direct Bilirubin: 0.2, Alkaline Phosphotase: 90, Alamine Aminotransferase: 35, Aspartate Aminotransferase: 25, Total Proteins: 7.2, Albumin: 4.1, Albumin and Globulin Ratio: 1.0, Disease: Endometriosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Negative]
 
-Patient 280: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 62, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 281: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 63, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 276: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 277: [Disease: Rheumatoid Arthritis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Male, Blood Pressure: High, Cholesterol Level: Low, Outcome Variable: Positive]
+Patient 278: [Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 279: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 63, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 280: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 64, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Positive]
+Patient 281: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 282: [Disease: Gastroesophageal Reflux Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 66, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Positive]
+Patient 283: [Disease: Crohn's Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 67, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 284: [Disease: Sjogren's Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 68, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 285: [Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 69, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Low, Outcome Variable: Positive]
+Patient 286: [Disease: Interstitial Cystitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
-Patient 282: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 64, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
 
-Patient 283: [Disease: Multiple Sclerosis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 284: [Disease: Crohn's Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 66, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 287: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 288: [Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 289: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 62, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 290: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 291: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 64, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 292: [Disease: Gout, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 61, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 293: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 67, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 294: [Disease: Lymphoma, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 63, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 295: [Disease: Ulcerative Colitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 296: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 68, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 297: [Disease: Meningitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 66, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 298: [Disease: Lupus, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 299: [Disease: Scleroderma, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 69, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
 
-Patient 285: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 67, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
 
-Patient 286: [Disease: Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 68, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 287: [Disease: Endometriosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 69, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 298: [Age: 58, Gender: Male, Total Bilirubin: 1.2, Direct Bilirubin: 0.8, Alkaline Phosphotase: 120, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 80, Total Proteins: 7.5, Albumin: 4.2, Albumin and Globulin Ratio: 0.5]
+Disease: Gout, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No
 
-Patient 288: [Disease: Diverticulitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 299: [Age: 62, Gender: Female, Total Bilirubin: 1.5, Direct Bilirubin: 1.0, Alkaline Phosphotase: 150, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 100, Total Proteins: 8.0, Albumin: 4.5, Albumin and Globulin Ratio: 0.6]
+Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No
 
+Patient 300: [Age: 59, Gender: Male, Total Bilirubin: 1.0, Direct Bilirubin: 0.5, Alkaline Phosphotase: 100, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 60, Total Proteins: 7.0, Albumin: 4.0, Albumin and Globulin Ratio: 0.4]
+Disease: Thyroiditis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No
 
+Patient 301: [Age: 61, Gender: Female, Total Bilirubin: 1.8, Direct Bilirubin: 1.2, Alkaline Phosphotase: 180, Alamine Aminotransferase: 90, Aspartate Aminotransferase: 120, Total Proteins: 8.5, Albumin: 5.0, Albumin and Globulin Ratio: 0.7]
+Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No
 
-```
-Patient 289: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 290: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 291: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 58, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 292: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 293: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 61, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 294: [Disease: Gout, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 295: [Disease: Chronic Obstructive Pulmonary Disease, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 63, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 296: [Disease: Irritable Bowel Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 56, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 297: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 64, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 298: [Disease: Diabetes Mellitus, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 57, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 299: [Disease: Kidney Stones, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 300: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 61, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 301: [Disease: Malaria, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 59, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-Patient 302: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
-```
+Patient 302: [Age: 58, Gender: Male, Total Bilirubin: 1.3, Direct Bilirubin: 0.9, Alkaline Phosphotase: 130, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 90, Total Proteins: 7.8, Albumin: 4.3, Albumin and Globulin Ratio: 0.5]
+Disease: Psoriasis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No
 
-I've generated new diseases such as Meningitis, Hypothyroidism, Pneumonia, and others, and also varied the symptoms and outcomes to create a more diverse dataset. Let me know if you need anything else!
+Patient 303: [Age: 60, Gender: Female, Total Bilirubin: 1.1, Direct Bilirubin: 0.7, Alkaline Phosphotase: 110, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 80, Total Proteins: 7.2, Albumin: 4.1, Albumin and Globulin Ratio: 0.4]
+Disease: Lupus, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No
 
+Patient 304: [Age: 62, Gender: Male, Total Bilirubin: 1.6, Direct Bilirubin: 1.1, Alkaline Phosphotase: 160, Alamine Aminotransferase: 80, Aspartate Aminotransferase: 110, Total Proteins: 8.2, Albumin: 4.8, Albumin and Globulin Ratio: 0.6]
+Disease: Diabetes, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No
 
-```
-Patient 301: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 302: [Disease: Ulcerative Colitis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 303: [Disease: Thyroiditis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 304: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 305: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 61, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 306: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 63, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 307: [Disease: Lupus, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 56, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 308: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 57, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 309: [Disease: Gout, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 310: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 64, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 311: [Disease: Interstitial Cystitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 312: [Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 61, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-```
+Patient 305: [Age: 59, Gender: Female, Total Bilirubin: 1.4, Direct Bilirubin: 0.9, Alkaline Phosphotase: 140, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 100, Total Proteins: 7.9, Albumin: 4.6, Albumin and Globulin Ratio: 0.5]
+Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No
 
-I've generated new diseases such as Rheumatoid Arthritis, Ulcerative Colitis, Thyroiditis, Multiple Sclerosis, Pneumonia, Sarcoidosis, Lupus, Psoriasis, Gout, Chronic Obstructive Pulmonary Disease (COPD), Interstitial Cystitis, and Fibromyalgia.
+Patient 306: [Age: 61, Gender: Male, Total Bilirubin: 1.9, Direct Bilirubin: 1.3, Alkaline Phosphotase: 190, Alamine Aminotransferase: 100, Aspartate Aminotransferase: 130, Total Proteins: 9.0, Albumin: 5.2, Albumin and Globulin Ratio: 0.7]
+Disease: Chronic Obstructive Pulmonary Disease, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes
 
+Patient 307: [Age: 58, Gender: Female, Total Bilirubin: 1.0, Direct Bilirubin: 0.5, Alkaline Phosphotase: 100, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 60, Total Proteins: 6.5, Albumin: 3.5, Albumin and Globulin Ratio: 0.3]
+Disease: Anemia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No
 
-Patient 313: [Disease: Sjögren's Syndrome, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 308: [Age: 62, Gender: Male, Total Bilirubin: 1.7, Direct Bilirubin: 1.2, Alkaline Phosphotase: 170, Alamine Aminotransferase: 90, Aspartate Aminotransferase: 120, Total Proteins: 8.8, Albumin: 5.1, Albumin and Globulin Ratio: 0.6]
+Disease: Chronic Fatigue Syndrome, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No
 
-Patient 314: [Disease: Polycystic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 315: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 61, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 309: [Disease: Gastroesophageal Reflux Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 310: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 311: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 312: [Disease: Hyperthyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 313: [Disease: Appendicitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 314: [Disease: Ulcerative Colitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 315: [Disease: Sarcoidosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 61, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 316: [Disease: Lymphoma, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 317: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 56, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 318: [Disease: Bronchiectasis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 63, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 319: [Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 68, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 320: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
-Patient 316: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 63, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
 
-Patient 317: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 318: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 62, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 320: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 321: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 45, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 322: [Disease: Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 323: [Disease: Osteoporosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 324: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 50, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 325: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 65, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 326: [Disease: Parkinson's Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 327: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 328: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 329: [Disease: Irritable Bowel Syndrome (IBS), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 40, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Patient 330: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 50, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
-Patient 319: [Disease: Parkinson's Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 64, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
 
-Patient 320: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
-Patient 321: [Disease: Hyperthyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 61, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 331: [Age: 72, Gender: Male, Total Bilirubin: 1.5, Direct Bilirubin: 0.8, Alkaline Phosphotase: 240, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 80, Total Proteins: 7.2, Albumin: 3.5, Albumin and Globulin Ratio: 1.2]
+Disease: Hepatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
 
-Patient 322: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 332: [Age: 68, Gender: Female, Total Bilirubin: 2.1, Direct Bilirubin: 1.1, Alkaline Phosphotase: 180, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 100, Total Proteins: 6.8, Albumin: 3.2, Albumin and Globulin Ratio: 1.1]
+Disease: Pancreatitis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive
 
-Patient 323: [Disease: Meningitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 64, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Negative]
+Patient 333: [Age: 75, Gender: Male, Total Bilirubin: 1.8, Direct Bilirubin: 0.9, Alkaline Phosphotase: 220, Alamine Aminotransferase: 55, Aspartate Aminotransferase: 85, Total Proteins: 7.5, Albumin: 3.8, Albumin and Globulin Ratio: 1.3]
+Disease: Gastritis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive
 
-Patient 324: [Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 63, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
+Patient 334: [Age: 69, Gender: Female, Total Bilirubin: 1.2, Direct Bilirubin: 0.5, Alkaline Phosphotase: 200, Alamine Aminotransferase: 65, Aspartate Aminotransferase: 90, Total Proteins: 7.1, Albumin: 3.4, Albumin and Globulin Ratio: 1.2]
+Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive
 
-Patient 325: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 335: [Age: 71, Gender: Male, Total Bilirubin: 1.9, Direct Bilirubin: 1.0, Alkaline Phosphotase: 250, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 80, Total Proteins: 7.3, Albumin: 3.6, Albumin and Globulin Ratio: 1.4]
+Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative
 
-I generated new diseases such as Sjögren's Syndrome, Polycystic Kidney Disease, Psoriasis, Chronic Obstructive Pulmonary Disease (COPD), Multiple Sclerosis, Irritable Bowel Syndrome (IBS), Parkinson's Disease, Gastroesophageal Reflux Disease (GERD), Hyperthyroidism, Hypothyroidism, Meningitis, and Fibromyalgia.
+Patient 336: [Age: 67, Gender: Female, Total Bilirubin: 2.3, Direct Bilirubin: 1.3, Alkaline Phosphotase: 190, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 110, Total Proteins: 6.9, Albumin: 3.1, Albumin and Globulin Ratio: 1.2]
+Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative
 
+Patient 337: [Age: 73, Gender: Male, Total Bilirubin: 1.6, Direct Bilirubin: 0.7, Alkaline Phosphotase: 210, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 95, Total Proteins: 7.4, Albumin: 3.9, Albumin and Globulin Ratio: 1.5]
+Disease: Chronic Kidney Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive
 
-Patient 325: [Disease: Tuberculosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 70, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 326: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 327: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: Yes, Age: 50, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 328: [Disease: Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 75, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 329: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 55, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 330: [Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 68, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 331: [Disease: Sarcoidosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 62, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 332: [Disease: Cystic Fibrosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 333: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 72, Gender: Female, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 334: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 58, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 335: [Disease: Gastroesophageal Reflux Disease (GERD), Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 67, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 336: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 59, Gender: Female, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 337: [Disease: Psoriasis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 63, Gender: Male, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 338: [Age: 70, Gender: Female, Total Bilirubin: 1.4, Direct Bilirubin: 0.6, Alkaline Phosphotase: 230, Alamine Aminotransferase: 55, Aspartate Aminotransferase: 85, Total Proteins: 7.2, Albumin: 3.7, Albumin and Globulin Ratio: 1.4]
+Disease: Osteoarthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative
 
+Patient 339: [Age: 72, Gender: Male, Total Bilirubin: 2.0, Direct Bilirubin: 1.2, Alkaline Phosphotase: 200, Alamine Aminotransferase: 65, Aspartate Aminotransferase: 100, Total Proteins: 7.0, Albumin: 3.3, Albumin and Globulin Ratio: 1.3]
+Disease: Gout, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive
 
+Patient 340: [Age: 68, Gender: Female, Total Bilirubin: 1.7, Direct Bilirubin: 0.8, Alkaline Phosphotase: 220, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 90, Total Proteins: 7.1, Albumin: 3.5, Albumin and Globulin Ratio: 1.4]
+Disease: Fibromyalgia, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: High, Outcome Variable: Negative
 
-Patient 337: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 338: [Disease: Gout, Fever: No, Cough: Yes, Fatigue: No, Difficulty Breathing: No, Age: 65, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 339: [Disease: Kidney Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 340: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 341: [Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 65, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 342: [Disease: Hypertension, Fever: No, Cough: No, Fatigue: No, Difficulty Breathing: No, Age: 60, Gender: Male, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 343: [Disease: Crohn's Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 344: [Disease: Asthma, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 65, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 345: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 346: [Disease: Diverticulitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 347: [Disease: Epilepsy, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 348: [Disease: Cystic Fibrosis, Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Negative]
-Patient 349: [Disease: Thyroiditis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Female, Blood Pressure: High, Cholesterol Level: Normal, Outcome Variable: Positive]
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
 
+Patient 342: [Age: 65, Gender: Male, Total Bilirubin: 1.2, Direct Bilirubin: 0.5, Alkaline Phosphotase: 120, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 7.5, Albumin: 4.2, Albumin and Globulin Ratio: 1.8, Disease: Hepatitis C]
 
+Patient 343: [Age: 75, Gender: Female, Total Bilirubin: 2.1, Direct Bilirubin: 0.8, Alkaline Phosphotase: 150, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 50, Total Proteins: 8.5, Albumin: 3.5, Albumin and Globulin Ratio: 1.5, Disease: Chronic Kidney Disease]
 
-Patient 349: [Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 350: [Disease: Pulmonary Embolism, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 75, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 351: [Disease: Multiple Sclerosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 352: [Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 353: [Disease: Osteoporosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 80, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 354: [Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 75, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 355: [Disease: Parkinson's Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 356: [Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 70, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
-Patient 357: [Disease: Lupus, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 60, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 358: [Disease: Crohn's Disease, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 65, Gender: Male, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 359: [Disease: Ulcerative Colitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Age: 70, Gender: Female, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive]
-Patient 360: [Disease: Sarcoidosis, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Age: 75, Gender: Male, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive]
+Patient 344: [Age: 60, Gender: Male, Total Bilirubin: 0.9, Direct Bilirubin: 0.3, Alkaline Phosphotase: 100, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 20, Total Proteins: 7.2, Albumin: 4.1, Albumin and Globulin Ratio: 1.7, Disease: Hypothyroidism]
 
+Patient 345: [Age: 80, Gender: Male, Total Bilirubin: 1.5, Direct Bilirubin: 0.6, Alkaline Phosphotase: 130, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 8.2, Albumin: 3.8, Albumin and Globulin Ratio: 1.4, Disease: Rheumatoid Arthritis]
+
+Patient 346: [Age: 55, Gender: Female, Total Bilirubin: 1.1, Direct Bilirubin: 0.4, Alkaline Phosphotase: 110, Alamine Aminotransferase: 35, Aspartate Aminotransferase: 25, Total Proteins: 7.8, Albumin: 4.5, Albumin and Globulin Ratio: 1.9, Disease: Multiple Sclerosis]
+
+Patient 347: [Age: 70, Gender: Male, Total Bilirubin: 1.8, Direct Bilirubin: 0.7, Alkaline Phosphotase: 140, Alamine Aminotransferase: 60, Aspartate Aminotransferase: 50, Total Proteins: 8.8, Albumin: 3.2, Albumin and Globulin Ratio: 1.3, Disease: Ulcerative Colitis]
+
+Patient 348: [Age: 62, Gender: Female, Total Bilirubin: 1.4, Direct Bilirubin: 0.5, Alkaline Phosphotase: 120, Alamine Aminotransferase: 45, Aspartate Aminotransferase: 35, Total Proteins: 7.9, Albumin: 4.3, Albumin and Globulin Ratio: 1.8, Disease: Type 2 Diabetes]
+
+Patient 349: [Age: 68, Gender: Male, Total Bilirubin: 1.6, Direct Bilirubin: 0.6, Alkaline Phosphotase: 130, Alamine Aminotransferase: 55, Aspartate Aminotransferase: 45, Total Proteins: 8.5, Albumin: 3.9, Albumin and Globulin Ratio: 1.6, Disease: Asthma]
+
+Patient 350: [Age: 72, Gender: Female, Total Bilirubin: 1.3, Direct Bilirubin: 0.4, Alkaline Phosphotase: 110, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 7.6, Albumin: 4.1, Albumin and Globulin Ratio: 1.7, Disease: Osteopenia]
+
+Patient 351: [Age: 65, Gender: Male, Total Bilirubin: 1.9, Direct Bilirubin: 0.8, Alkaline Phosphotase: 150, Alamine Aminotransferase: 70, Aspartate Aminotransferase: 60, Total Proteins: 9.2, Albumin: 3.1, Albumin and Globulin Ratio: 1.2, Disease: Psoriasis]
+
+Patient 352: [Age: 58, Gender: Female, Total Bilirubin: 1.7, Direct Bilirubin: 0.6, Alkaline Phosphotase: 140, Alamine Aminotransferase: 65, Aspartate Aminotransferase: 55, Total Proteins: 8.4, Albumin: 4.6, Albumin and Globulin Ratio: 1.9, Disease: Endometriosis]
+
+
+Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+
+Patient 349: [Age: 75, Gender: Male, Total Bilirubin: 1.2, Direct Bilirubin: 0.8, Alkaline Phosphotase: 120, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 7.5, Albumin: 3.5, Albumin and Globulin Ratio: 1.2]
+Disease: Hepatitis B, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 350: [Age: 60, Gender: Female, Total Bilirubin: 0.9, Direct Bilirubin: 0.5, Alkaline Phosphotase: 100, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 20, Total Proteins: 7.2, Albumin: 3.2, Albumin and Globulin Ratio: 1.1]
+Disease: Chronic Kidney Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 351: [Age: 65, Gender: Male, Total Bilirubin: 1.5, Direct Bilirubin: 1.0, Alkaline Phosphotase: 150, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 8.0, Albumin: 3.8, Albumin and Globulin Ratio: 1.3]
+Disease: Pancreatitis, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 352: [Age: 55, Gender: Female, Total Bilirubin: 0.8, Direct Bilirubin: 0.4, Alkaline Phosphotase: 90, Alamine Aminotransferase: 25, Aspartate Aminotransferase: 15, Total Proteins: 6.8, Albumin: 3.0, Albumin and Globulin Ratio: 1.0]
+Disease: Rheumatoid Arthritis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 353: [Age: 70, Gender: Male, Total Bilirubin: 1.0, Direct Bilirubin: 0.6, Alkaline Phosphotase: 110, Alamine Aminotransferase: 35, Aspartate Aminotransferase: 25, Total Proteins: 7.0, Albumin: 3.4, Albumin and Globulin Ratio: 1.2]
+Disease: Pneumonia, Fever: Yes, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 354: [Age: 50, Gender: Female, Total Bilirubin: 0.7, Direct Bilirubin: 0.3, Alkaline Phosphotase: 80, Alamine Aminotransferase: 20, Aspartate Aminotransferase: 10, Total Proteins: 6.5, Albumin: 2.9, Albumin and Globulin Ratio: 0.9]
+Disease: Multiple Myeloma, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 355: [Age: 85, Gender: Male, Total Bilirubin: 1.1, Direct Bilirubin: 0.7, Alkaline Phosphotase: 130, Alamine Aminotransferase: 45, Aspartate Aminotransferase: 35, Total Proteins: 7.8, Albumin: 3.6, Albumin and Globulin Ratio: 1.4]
+Disease: Chronic Obstructive Pulmonary Disease (COPD), Fever: No, Cough: Yes, Fatigue: Yes, Difficulty Breathing: Yes, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 356: [Age: 60, Gender: Female, Total Bilirubin: 0.9, Direct Bilirubin: 0.5, Alkaline Phosphotase: 100, Alamine Aminotransferase: 30, Aspartate Aminotransferase: 20, Total Proteins: 7.2, Albumin: 3.2, Albumin and Globulin Ratio: 1.1]
+Disease: Hypothyroidism, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 357: [Age: 75, Gender: Male, Total Bilirubin: 1.3, Direct Bilirubin: 0.9, Alkaline Phosphotase: 140, Alamine Aminotransferase: 50, Aspartate Aminotransferase: 40, Total Proteins: 8.2, Albumin: 3.9, Albumin and Globulin Ratio: 1.5]
+Disease: Chronic Heart Failure, Fever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Blood Pressure: High, Cholesterol Level: High, Outcome Variable: Positive
+
+Patient 358: [Age: 65, Gender: Female, Total Bilirubin: 0.8, Direct Bilirubin: 0.4, Alkaline Phosphotase: 90, Alamine Aminotransferase: 25, Aspartate Aminotransferase: 15, Total Proteins: 6.8, Albumin: 3.0, Albumin and Globulin Ratio: 1.0]
+Disease: Osteoporosis, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
+
+Patient 359: [Age: 80, Gender: Male, Total Bilirubin: 1.2, Direct Bilirubin: 0.8, Alkaline Phosphotase: 120, Alamine Aminotransferase: 40, Aspartate Aminotransferase: 30, Total Proteins: 7.5, Albumin: 3.5, Albumin and Globulin Ratio: 1.2]
+Disease: Alzheimer's Disease, Fever: No, Cough: No, Fatigue: Yes, Difficulty Breathing: No, Blood Pressure: Normal, Cholesterol Level: Normal, Outcome Variable: Positive
 
