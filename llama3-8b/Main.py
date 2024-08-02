@@ -76,15 +76,6 @@ def main(
         )
 
         print("Printing generated records...")
-        """
-        for dialog, result in zip(dialogs, results):
-            for msg in dialog:
-                print(f"{msg['role'].capitalize()}: {msg['content']}\n")
-            print(
-                f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
-            )
-            print("\n==================================\n")
-        """
         
         results_txt = config['llama-3-8b']['input_file']
 
