@@ -1,0 +1,96 @@
+\chapter{Evaluation}
+\label{chap:Evaluation}
+
+The evaluation of the results represents a critical part of the pipeline as it would determine if LLMs can provide performant results compared to GANs-based models.
+However, it is important to select the right metrics to evaluate the data as they will be the ones that will judge if the data meets the quality standards and objectives of the analysis. The chosen metrics should align with the goals of the project and be capable of providing meaningful insights into the data's accuracy, relevance, and reliability.
+
+\section{Choices of Metrics}
+
+% Say no concrete metrics or officials metrics as the domain of LLM and CTGAN data synthesis is new, so I chose the metrics based on how to compare the resemblance between two data
+
+\subsection{Measurement of the Similarity}
+
+\begin{enumerate}
+    \item Average Dimensionwise Means Difference \\
+    It measures how closely the synthetic data matches the mean values of the original data.
+
+    \item PCA Metrics \\
+    It evaluates how well the synthetic data captures the variance and structure of the original data.
+
+    \item Confidence Interval Overlap \\
+    It measures how well the variability in the synthetic data matches the original data by comparing the overlap of their confidence intervals.
+
+    \item Correlation Metrics \\
+    It assesses how well the synthetic data preserves the relationships between variables in the original data.
+
+    \item Kolmogorov-Smirnov / Total Variation Distance Test \\
+    They evaluate the distributional similarity between synthetic and original data.
+
+    \item Empirical Hellinger Distance \\
+    It measures the similarity between probability distributions of the original and synthetic data.
+
+    \item Propensity Mean Squared Error (pMSE) \\
+    It evaluates how well the synthetic data mimics the original data for predictive modeling.
+
+    \item Nearest Neighbour Adversarial Accuracy \\
+    It assesses the distinguishability between synthetic and original data.
+
+\end{enumerate}
+
+
+
+\subsection{Measurement of the Accuracy of the Data}
+
+In this section, the data and the synthetic data will be passed on to machine learning models to measure the accuracy. All models will be trained on the synthetic dataset and will be evaluated on the original dataset. The following machine learning models are utilized:
+
+\begin{enumerate}
+    \item Decision Tree Classifier \\
+    A simple model, it can handle both numerical and categorical data.
+
+    \item AdaBoost Classifier \\
+    An improved version of the decision tree classifier focuses on the instances that are harder to classify and helps reduce the overall bias
+
+    \item Random Forest Classifier \\
+    The random forest classifier models are robust against overfitting as they leverage multiple decision trees.
+
+    \item Logistic Regression \\
+    Logistic regression is particularly effective for binary classification.
+\end{enumerate}
+
+\noindent Accuracy metrics are used to evaluate the generated data.
+
+\begin{enumerate}
+    \item Accuracy Real  (Acc R) \\
+    It represents the classification accuracy of the original data. 
+
+    \item Accuracy Fake (Acc F) \\
+    It indicates the classification accuracy of the synthetic data.
+
+    \item Absolute Difference ($|$Diff$|$) \\
+    It shows the absolute difference between the accuracy real and the accuracy fake. This metric will show the discrepancy in the model's performance between the real and synthetic data.
+
+    \item Error \\
+    It represents the error rate of the model.
+    
+\end{enumerate}
+
+\subsection{Measurement of the Data Privacy}
+
+
+\begin{enumerate}
+    \item Nearest Neighbour Distance Ratio \\
+     It measures how close the synthetic data points are to the nearest real data points, with higher values indicating lower privacy.
+
+    \item Median Distance to Closest Record \\
+    measures the median distance from each synthetic data point to its nearest real data point, with higher values indicating better privacy.
+
+    \item Hitting Rate (0.03 x Range(att)) \\
+    It measures the fraction of synthetic data points that fall within a very small range of the real data points, with lower values indicating better privacy.
+
+    \item Epsilon Identifiability Risk \\
+    It measures the risk of re-identifying individuals in the synthetic data, with lower values indicating better privacy.
+
+    \item Attribute Disclosure Risk (Accuracy) \\
+    It measures the risk of accurately predicting sensitive attributes, with lower values indicating better privacy.
+    
+\end{enumerate}
