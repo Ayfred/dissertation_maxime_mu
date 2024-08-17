@@ -1,0 +1,94 @@
+\chapter*{Privacy Metrics}
+\label{app:privacy_metrics_appendix}
+
+\begin{table}[H]
+    \centering
+    \caption{Nearest Neighbour Distance Ratio for Synthetic Data Models}
+    \label{tab:nn_distance_ratio_combined}
+    \begin{tabularx}{\textwidth}{l*{5}{X}}
+        \toprule
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{First Data}} & \multicolumn{2}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        & \textbf{Value} & \textbf{Error} & \textbf{Value} & \textbf{Error} \\
+        \midrule
+        BeGreat & 0.7223 & 0.0180 & 0.8898 & 0.0015 \\
+        CTGAN & 0.7283 & 0.0162 & 0.9460 & 0.0008 \\
+        Llama3 & 0.7234 & 0.0155 & 0.0437 & 0.0032 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Median Distance to Closest Record for Synthetic Data Models}
+    \label{tab:median_distance_combined}
+    \begin{tabularx}{\textwidth}{l*{5}{X}}
+        \toprule
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{First Data}} & \multicolumn{2}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        & \textbf{Value} & & \textbf{Value} \\
+        \midrule
+        BeGreat & 1.1470 & & 7.6622 \\
+        CTGAN & 1.8081 & & 1.1345 \\
+        Llama3 & \(\infty\) & & 1.5819 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+    
+
+\begin{table}[H]
+    \centering
+    \caption{Hitting Rate (0.03 x Range(att)) for Synthetic Data Models}
+    \label{tab:hitting_rate_combined}
+    \begin{tabularx}{\textwidth}{l*{5}{X}}
+        \toprule
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{First Data}} & \multicolumn{2}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        & \textbf{Value} & & \textbf{Value} \\
+        \midrule
+        BeGreat & 0.0144 & & 0.0000 \\
+        CTGAN & 0.0144 & & 0.0000 \\
+        Llama3 & 0.0172 & & 0.0000 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Epsilon Identifiability Risk for Synthetic Data Models}
+    \label{tab:epsilon_identifiability_risk_combined}
+    \begin{tabularx}{\textwidth}{l*{5}{X}}
+        \toprule
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{First Data}} & \multicolumn{2}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        & \textbf{Value} & & \textbf{Value} \\
+        \midrule
+        BeGreat & 0.3849 & & 0.0002 \\
+        CTGAN & 0.3381 & & 0.2122 \\
+        Llama3 & 0.0805 & & 0.1729 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Attribute Disclosure Risk (Accuracy) for Synthetic Data Models}
+    \label{tab:attr_disclosure_risk_combined}
+    \begin{tabularx}{\textwidth}{l*{5}{X}}
+        \toprule
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{First Data}} & \multicolumn{2}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        & \textbf{Value} & \textbf{Error} & \textbf{Value} & \textbf{Error} \\
+        \midrule
+        BeGreat & 0.8044 & 0.0540 & 0.1498 & 0.0666 \\
+        CTGAN & 0.7993 & 0.0565 & 0.2041 & 0.0459 \\
+        Llama3 & 0.8540 & 0.0472 & 0.3977 & 0.1057 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+
+

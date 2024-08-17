@@ -1,0 +1,134 @@
+\chapter*{Effectiveness Metrics}
+\label{app:effectiveness_metrics_appendix}
+
+
+
+
+
+
+
+\begin{table}[H]
+    \centering
+    \caption{PCA Metrics for Synthetic Data Models}
+    \label{tab:pca_metrics_combined}
+    \begin{tabularx}{\textwidth}{l*{6}{X}}
+        \toprule
+        \textbf{Metric Description} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{3}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+        & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} \\
+        \midrule
+        PCA Eigenval. Diff. & 0.0085 & 0.0125 & 0.0196 & 0.0781 & 0.3825 & 0.2181 \\
+        PCA Eigenvec. Angle & 1.0226 & 0.9035 & 1.5565 & 0.9489 & 1.5186 & 0.2738 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+    
+
+
+\begin{table}[H]
+    \centering
+    \caption{Confidence Interval Overlap for Synthetic Data Models}
+    \label{tab:ci_overlap_combined}
+    \begin{tabularx}{\textwidth}{l*{6}{X}}
+        \toprule
+        \textbf{Metric Description} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{3}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+        & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} \\
+        \midrule
+        Avg. CI Overlap & 0.1725 ± 0.1038 & 0.2497 ± 0.0805 & 0.3632 ± 0.0996 & 0.0300 ± 0.0300 & 0.0654 ± 0.0437 & 0.0000 ± 0.0000 \\
+        \# Non-overlapping CIs & 9 & 7 & 7 & 8 & 7 & 9 \\
+        Frac. Non-overlapping CIs & 0.7500 & 0.4667 & 0.4667 & 0.8889 & 0.7778 & 1.0000 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Correlation Metrics for Synthetic Data Models}
+    \label{tab:correlation_metrics_combined}
+    \begin{tabularx}{\textwidth}{l*{6}{X}}
+        \toprule
+        \textbf{Metric Description} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{3}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+        & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} \\
+        \midrule
+        Correlation Matrix Diff. & 2.9316 & 0.8911 & 0.9849 & 1.0608 & 3.2077 & 1.9991 \\
+        Mutual Info. Diff. & 2.7911 & 0.6086 & 0.5918 & 0.1937 & 0.2485 & 1.1123 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+
+\begin{table}[H]
+    \centering
+    \caption{Kolmogorov-Smirnov / Total Variation Distance Test for Synthetic Data Models}
+    \label{tab:ks_tv_test_combined}
+    \begin{tabularx}{\textwidth}{l*{6}{X}}
+        \toprule
+        \textbf{Metric Description} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{3}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+        & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} \\
+        \midrule
+        Avg. Combined Stat. & 0.0894 ± 0.0185 & 0.0478 ± 0.0120 & 0.0573 ± 0.0118 & 0.0863 ± 0.0174 & 0.1110 ± 0.0201 & 0.0781 ± 0.0140 \\
+        Avg. KS Dist. & 0.0699 ± 0.0167 & 0.0426 ± 0.0159 & 0.0400 ± 0.0126 & 0.0974 ± 0.0193 & 0.0946 ± 0.0196 & 0.0936 ± 0.0117 \\
+        Avg. TV Dist. & 0.1089 ± 0.0330 & 0.0565 ± 0.0186 & 0.0860 ± 0.0207 & 0.0362 ± 0.0121 & 0.1848 ± 0.0404 & 0.0087 ± 0.0080 \\
+        Avg. Combined p-value & 0.3600 ± 0.0858 & 0.6765 ± 0.0812 & 0.5865 ± 0.0850 & 0.0029 ± 0.0027 & 0.0004 ± 0.0003 & 0.1006 ± 0.0887 \\
+        \# Sig. Tests (\(\alpha=0.05\)) & 9 & 2 & 6 & 11 & 11 & 9 \\
+        Frac. Sig. Tests & 0.3750 & 0.0833 & 0.2500 & 1.0000 & 1.0000 & 0.8182 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Empirical Hellinger Distance for Synthetic Data Models}
+    \label{tab:hellinger_distance_combined}
+    \begin{tabularx}{\textwidth}{l*{6}{X}}
+        \toprule
+        \textbf{Metric Description} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{3}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+        & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} \\
+        \midrule
+        Avg. Hellinger Dist. & 0.0621 ± 0.0243 & 0.0396 ± 0.0228 & 0.0429 ± 0.0160 & 0.0775 ± 0.0288 & 0.1045 ± 0.0252 & 0.1714 ± 0.0636 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+    
+
+
+\begin{table}[H]
+    \centering
+    \caption{Propensity Mean Squared Error (pMSE) for Synthetic Data Models}
+    \label{tab:pmse_combined}
+    \begin{tabularx}{\textwidth}{l*{6}{X}}
+        \toprule
+        \textbf{Metric Description} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{3}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+        & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} \\
+        \midrule
+        pMSE & 0.0730 ± 0.0042 & 0.0219 ± 0.0010 & 0.0455 ± 0.0033 & 0.0168 ± 0.0004 & 0.0324 ± 0.0006 & 0.0194 ± 0.0005 \\
+        Avg. pMSE Accuracy & 0.7261 ± 0.0196 & 0.5799 ± 0.0147 & 0.6523 ± 0.0206 & 0.5442 ± 0.0072 & 0.6434 ± 0.0072 & 0.5821 ± 0.0072 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Nearest Neighbour Adversarial Accuracy for Synthetic Data Models}
+    \label{tab:nn_accuracy_combined}
+    \begin{tabularx}{\textwidth}{l*{6}{X}}
+        \toprule
+        \textbf{Metric Description} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{3}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+        & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} & \textbf{Llama3} & \textbf{CTGAN} & \textbf{BeGreat} \\
+        \midrule
+        NN Adversarial Accuracy & 0.8170 ± 0.0000 & 0.6585 ± 0.0000 & 0.6574 ± 0.0000 & 0.9280 ± 0.0000 & 0.9276 ± 0.0000 & 0.9999 ± 0.0000 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+

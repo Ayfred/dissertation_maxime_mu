@@ -1,0 +1,76 @@
+\chapter*{Machine Learning Classification Accuracy}
+\label{app:ml_appendix}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Classification Accuracy for DecisionTreeClassifier}
+    \label{tab:decision_tree_accuracy_combined}
+    \begin{tabularx}{\textwidth}{l*{8}{X}}
+        \toprule
+        \textbf{Model} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{4}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-8}
+        & \textbf{Acc\textsubscript{R}} & \textbf{Acc\textsubscript{F}} & \textbf{$|$Diff$|$} & \textbf{Error} & \textbf{Acc\textsubscript{R}} & \textbf{Acc\textsubscript{F}} & \textbf{$|$Diff$|$} & \textbf{Error} \\
+        \midrule
+        BeGreat & 1.0000 & 0.9818 & 0.0182 & 0.0115 & 0.5300 & 0.5241 & 0.0059 & 0.0117 \\
+        CTGAN & 1.0000 & 1.0000 & 0.0000 & 0.0000 & 0.5105 & 0.5079 & 0.0026 & 0.0152 \\
+        Llama3 & 0.9820 & 1.0000 & 0.0180 & 0.0113 & 0.6421 & 0.5834 & 0.0586 & 0.0299 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Classification Accuracy for AdaBoostClassifier}
+    \label{tab:adaboost_accuracy_combined}
+    \begin{tabularx}{\textwidth}{l*{8}{X}}
+        \toprule
+        \textbf{Model} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{4}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-8}
+        & \textbf{Acc\textsubscript{R}} & \textbf{Acc\textsubscript{F}} & \textbf{$|$Diff$|$} & \textbf{Error} & \textbf{Acc\textsubscript{R}} & \textbf{Acc\textsubscript{F}} & \textbf{$|$Diff$|$} & \textbf{Error} \\
+        \midrule
+        BeGreat & 0.6295 & 0.5322 & 0.0973 & 0.0579 & 0.6001 & 0.5267 & 0.0734 & 0.0335 \\
+        CTGAN & 0.6006 & 0.6008 & 0.0002 & 0.0427 & 0.6006 & 0.4688 & 0.1318 & 0.0153 \\
+        Llama3 & 0.8059 & 0.7401 & 0.0658 & 0.0617 & 0.7285 & 0.6661 & 0.0624 & 0.0585 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Classification Accuracy for RandomForestClassifier}
+    \label{tab:random_forest_accuracy_combined}
+    \begin{tabularx}{\textwidth}{l*{8}{X}}
+        \toprule
+        \textbf{Model} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{4}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-8}
+        & \textbf{Acc\textsubscript{R}} & \textbf{Acc\textsubscript{F}} & \textbf{$|$Diff$|$} & \textbf{Error} & \textbf{Acc\textsubscript{R}} & \textbf{Acc\textsubscript{F}} & \textbf{$|$Diff$|$} & \textbf{Error} \\
+        \midrule
+        BeGreat & 1.0000 & 0.9782 & 0.0218 & 0.0106 & 0.5581 & 0.5167 & 0.0414 & 0.0214 \\
+        CTGAN & 1.0000 & 1.0000 & 0.0000 & 0.0000 & 0.5598 & 0.5020 & 0.0578 & 0.0155 \\
+        Llama3 & 0.9928 & 1.0000 & 0.0072 & 0.0044 & 0.7059 & 0.6475 & 0.0584 & 0.0177 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+
+\begin{table}[H]
+    \centering
+    \caption{Classification Accuracy for LogisticRegression}
+    \label{tab:logistic_regression_accuracy_combined}
+    \begin{tabularx}{\textwidth}{l*{8}{X}}
+        \toprule
+        \textbf{Model} & \multicolumn{3}{c}{\textbf{First Data}} & \multicolumn{4}{c}{\textbf{Second Data}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-8}
+        & \textbf{Acc\textsubscript{R}} & \textbf{Acc\textsubscript{F}} & \textbf{$|$Diff$|$} & \textbf{Error} & \textbf{Acc\textsubscript{R}} & \textbf{Acc\textsubscript{F}} & \textbf{$|$Diff$|$} & \textbf{Error} \\
+        \midrule
+        BeGreat & 0.9964 & 0.9674 & 0.0290 & 0.0139 & 0.5961 & 0.4867 & 0.1094 & 0.0104 \\
+        CTGAN & 0.9964 & 1.0000 & 0.0036 & 0.0036 & 0.6083 & 0.4921 & 0.1162 & 0.0120 \\
+        Llama3 & 0.9892 & 1.0000 & 0.0108 & 0.0072 & 0.7138 & 0.6812 & 0.0326 & 0.0317 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+    
+    

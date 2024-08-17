@@ -1,0 +1,152 @@
+\chapter*{Configuration File Implementation}
+\label{app:config_implementation}
+
+\begin{verbatim}
+
+[dataset]
+data_in_use = data1
+
+[data1]
+name = 
+data_dir = ../datasets/data.csv
+headers = Disease, Fever, Cough, Fatigue, Difficulty Breathing, Age, Gender, Blood Pressure, Cholesterol Level, Outcome Variable
+number_of_records = 348
+
+[data2]
+name = hospital-triage-and-patient-history-data
+data_dir = ../datasets/data2.csv
+
+[data3]
+name = 
+data_dir = ../datasets/indian_liver_patient.csv
+
+[data4]
+name = Patient Treatment Classification
+data_dir = ../datasets/data-ori.csv
+headers = HAEMATOCRIT, HAEMOGLOBINS, ERYTHROCYTE, LEUCOCYTE, THROMBOCYTE, MCH, MCHC, MCV, AGE, SEX, SOURCE
+
+################################################################################################################
+
+
+
+
+# BeGreat
+[begreat]
+llm = distilgpt2
+batch_size = 64
+epochs = 32
+save_steps = 400000
+n_samples = 4410
+#####348
+output_file = ./results/synthetic_data_begreat_data_ori.csv
+output_file2 = ./results/synthetic_data_begreat.csv
+
+
+
+# CTGAN
+[ctgan]
+input_file = ./results/synthetic_data_ctgan_data_ori.txt
+input_file2 = ./results/synthetic_data_ctgan.txt
+output_file = ./results/synthetic_data_ctgan_data_ori.csv
+output_file2 = ./results/synthetic_data_ctgan.csv
+#discrete_columns = Disease, Fever, Cough, Fatigue, Difficulty Breathing, Gender, Blood Pressure, Cholesterol Level, Outcome Variable
+discrete_columns = HAEMATOCRIT, HAEMOGLOBINS, ERYTHROCYTE, LEUCOCYTE, THROMBOCYTE, MCH, MCHC, MCV, AGE, SEX, SOURCE
+num_samples = 4410
+#####348
+
+
+# Google Gemma
+[gemma-2b]
+input_file = ./results/synthetic_data_gemma_2b.txt
+input_file2 = ./results/synthetic_data_gemma_2b_large.txt
+output_file = ./results/synthetic_data_gemma_2b.csv
+output_file2 = ./results/synthetic_data_gemma_2b_large.csv
+
+[gemma-7b]
+input_file = ./results/synthetic_data_gemma_7b.txt
+input_file2 = ./results/synthetic_data_gemma_7b_large.txt
+output_file = ./results/synthetic_data_gemma_7b.csv
+output_file2 = ./results/synthetic_data_gemma_7b_large.csv
+
+[gemma2-9b]
+input_file = ./results/synthetic_data_gemma2_9b.txt
+output_file = ./results/synthetic_data_gemma2_9b.csv
+input_text_11 = " Generate 12 additional patient records in the following format:\
+                            Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome\
+                            Use this current data for reference:\
+                            "
+input_text_1 = "Generate 15 patient records using the following data as reference:\
+                And put the data in the following format:\
+                Patient i:
+                HAEMATOCRIT: 31.5, HAEMOGLOBINS: 10.4, ERYTHROCYTE: 3.15, LEUCOCYTE: 9.1, THROMBOCYTE: 187, MCH: 33.0, MCHC: 33.0, MCV: 100.0, AGE: 98, SEX: F, SOURCE: in\
+                Data:"
+
+
+
+# Meta LLaMa 2
+[llama-2-7b]
+input_file = ./results/synthetic_data_llama_2_7b.txt
+input_file2 = ./results/synthetic_data_llama_2_7b_large.txt
+output_file = ./results/synthetic_data_llama_2_7b.csv
+output_file2 = ./results/synthetic_data_llama_2_7b_large.csv
+input_text = "Generate 12 additional patient records in the following format and don't hesitate to generate new diseases as well:\
+                Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome]\
+                Use this current data for reference:\
+                Data: "
+
+[llama-2-70b]
+input_file = ./results/synthetic_data_llama_2_70b.txt
+input_file2 = ./results/synthetic_data_llama_2_70b_large.txt
+output_file = ./results/synthetic_data_llama_2_70b.csv
+output_file2 = ./results/synthetic_data_llama_2_70b_large.csv
+
+
+# Meta LLaMa 3
+[llama-3-8b]
+#input_text = "Generate 12 additional patient records in the following format and don't hesitate to generate new diseases as well:\
+                    #Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome]\
+                    #Use this current data for reference:\
+                    #Data: "
+input_text = "Generate 11 additional patient records in the following format and don't hesitate to generate new diseases as well:\
+                    Patient i: [Age: age, Gender: gender, Total Bilirubin: total_bilirubin, Direct Bilirubin: direct_bilirubin,
+                    Alkaline Phosphotase: alkaline_phosphotase, Alamine Aminotransferase: alamine_aminotransferase,
+                    Aspartate Aminotransferase: aspartate_aminotransferase, Total Proteins: total_proteins,
+                    Albumin: albumin, Albumin and Globulin Ratio: albumin_and_globulin_ratio]\
+                    Use this current data for reference:\
+                    Data: "
+
+input_text_ = "Generate 15 patient records using the following data as reference:\
+                And put the data in the following format:\
+                Patient i:
+                HAEMATOCRIT: 31.5, HAEMOGLOBINS: 10.4, ERYTHROCYTE: 3.15, LEUCOCYTE: 9.1, THROMBOCYTE: 187, MCH: 33.0, MCHC: 33.0, MCV: 100.0, AGE: 98, SEX: F, SOURCE: in\
+                Data:"
+
+input_file2 = ./results/synthetic_data_llama_3_8b_data_ori.txt
+input_file = ./results/synthetic_data_llama_3_8b.txt
+output_file2 = ./results/synthetic_data_llama_3_8b_data_ori.csv
+output_file = ./results/synthetic_data_llama_3_8b.csv
+pattern = Patient \d+: \[Disease: (.*?), Fever: (.*?), Cough: (.*?), Fatigue: (.*?), Difficulty Breathing: (.*?), Age: (\d+), Gender: (.*?), Blood Pressure: (.*?), Cholesterol Level: (.*?), Outcome Variable: (.*?)\]
+#pattern = r"Patient \d+:\s*HAEMATOCRIT: (.*?), HAEMOGLOBINS: (.*?), ERYTHROCYTE: (.*?), LEUCOCYTE: (.*?), THROMBOCYTE: (.*?), MCH: (.*?), MCHC: (.*?), MCV: (.*?), AGE: (\d+), SEX: (.*?), SOURCE: (.*?)\n"
+#pattern = \b(HAEMATOCRIT|HAEMOGLOBINS|ERYTHROCYTE|LEUCOCYTE|THROMBOCYTE|MCH|MCHC|MCV|AGE|SEX|SOURCE):\s*([^,]+)
+
+[llama-3-70b]
+input_file = ./results/synthetic_data_llama_3_70b.txt
+input_file2 = ./results/synthetic_data_llama_3_70b_large.txt
+output_file = ./results/synthetic_data_llama_3_70b.csv
+output_file2 = ./results/synthetic_data_llama_3_70b_large.csv
+
+
+# Mistral 7b
+[mistral-7b]
+input_text = "Generate 12 additional patient records in the following format and don't hesitate to generate new diseases and avoid same patients as in the provided data:\
+                    Patient i: [Disease: disease, Fever: fever, Cough: cough, Fatigue: fatigue, Difficulty Breathing: difficulty_breathing, Age: age, Gender: gender, Blood Pressure: blood_pressure, Cholesterol Level: cholesterol_level, Outcome Variable: outcome]\
+                    Use this current data for reference:\
+                    Data: "
+input_file = ./results/synthetic_data_mistral-7b.txt
+input_file2 = ./results/synthetic_data_mistral-7b_large.txt
+output_file = ./results/synthetic_data_mistral-7b.csv
+output_file2 = ./results/synthetic_data_mistral-7b_large.csv
+
+
+
+\end{verbatim}

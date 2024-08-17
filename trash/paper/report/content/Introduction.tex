@@ -1,0 +1,94 @@
+\chapter{Introduction}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INTRODUCTION %%%%%%%%%%%%%%%%%%%%%%
+
+The rapid progress of technology tools has tremendously increased new opportunities for simplifying manual tasks. Numerous fields have started to adopt this approach as people have seen the potential. In fact, one of the most innovative tools that has been used in our everyday lives is tabular data. At first sight, we don't realise how deeply ingrained it is in our daily routines. From the spreadsheets people use for managing finance-related tasks to the train schedules we consult, tabular data silently underpins countless interactions in our daily lives. 
+
+\section{What is a Synthetic Data ?}
+\label{sec:DefinitionSyntheticData}
+
+%%%%%%%%%%%%%%%%%%% DEFINITION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Tabular data is well-structured data arranged as a table where each row represents an individual record or observation and each column represents a specific variable or feature associated with that record. It has been widely adopted as it offers numerous advantages that facilitate data manipulation and reading. Nowadays, the most commonly used formats for representing tabular data are CSV (Comma-Separated Values) and XLS (specific format in Microsoft Excel software). The difference between the two mentioned formats is that a CSV file is lightweight compared to XLS as a CSV file is mainly defined as a plain text file that can be easily read and processed by any program. Conversely, XLS is formatted as a compressed binary file and requires specific software to read the file content. However, XLS offers a wide range of data analytics features that CSV does not support such as data manipulation with formulas, charts and pivot tables.
+
+%%%%%%%%%%%%%%%%% DIFFERENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.5cm}
+The relation between a dataset and tabular data is that tabular data is a way of arranging data within a dataset. As a matter of fact, a dataset can be in various formats such as text files, images, and tables. Tabular formatting showed its efficiency in its widespread adoption for data analysis and machine learning tasks. For example, Kaggle, a popular platform referencing all datasets from various domains from healthcare to finance data, utilises a tabular format. 
+
+%%%%%%%%%%%%%%%%% PYTHON %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.5cm}
+Programming languages like Python offer powerful libraries, such as pandas, that make tabular data reading and manipulation incredibly efficient. Other languages such as R and Java also provide robust libraries for working with tabular data, Python remains the most used programming language for tabular data considering its potential domain of applications.
+
+\section{Importance in the Healthcare Domain}
+\label{sec:healthcare}
+
+This paper delves deeper into the healthcare domain, specifically focusing on hospital patient records. Patient health records can be efficiently organised in a tabular format as each row represents an individual patient, with each column capturing different aspects of their health such as their age, names, diagnoses, medications, or treatment history. 
+
+%%%%%%%%%%%%%%%%%%%% CHALLENGE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.5cm}
+However, conducting a study on patients' data can prove quite challenging. In fact, not only the ethical question but also the security question pose a crucial problem as hospitals would easily not let anyone have access to their patient's records and the increase in the number of data tends to increase the probability of security and privacy breaches (\cite{Abouelmehdi2018}). Patient data is considered very sensitive as it contains personal information about each patient. Hospitals have been for many years targets of cyberattacks. Hackers try to get access to sensitive data and ask for a ransom from hospitals as they could potentially expose sensitive data and compromise patient privacy leading to identity theft and disruptions in critical care. For example, in the \cite{Abouelmehdi2018} paper, over 3 million patient records have been breached in one year, and 40\% of breach incidents are due to unauthorized access/disclosure. The high risks and consequences mentioned above undeniably impose a major constraint on the number of possible studies and research projects within the healthcare domain (\cite{DataSynthesizer2017}, \cite{ElEmam2020}). 
+
+%%%%%%%%%%%%%%%%%%%%% RESEARCH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.5cm}
+Research is fundamental as it drives disease diagnosis and treatment advancements, leading to more effective medication development and personalised and faster treatments (\cite{Abouelmehdi2018}). Additionally, research could help us understand the progression of diseases, identify risk factors, and develop preventative measures.
+
+%%%%%%%%%%%%%%%%%%% SYNTHETIC DATA %%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.5cm}
+This is where synthetic data comes into play. With an increasing interest in synthetic data usage, it refers to artificially generated data that mimic properties and statistical characteristics of real-world data but does not contain any real information (\cite{ElEmam2020}). This means fictional patient records can be synthesized without having real information about patients on the fictional data, which can be artificial enough to reassure data owners and provide robust privacy safeguards to prevent adversaries from extracting sensitive information (\cite{DataSynthesizer2017}). Synthetic data is a huge boon for ethical and privacy-conscious research, this suggests scientists can explore new possibilities and conduct experiments without compromising patient confidentiality. As a matter of fact, synthetic data could help hospitals determine even faster symptoms from future patients and treat the patient's disease more effectively and, overall, with possibly less cost.
+
+\section{Limitations of Data Sources}
+\label{sec:LimitationsTraditionalData}
+
+Data sources in the healthcare field, such as patients' health records, have limitations that affect the data quality; a necessary factor if we want to conduct any data analysis or machine learning techniques. The patient's health records can sometimes be incomplete due to human error, a lack of standardisation in data entry, or a software error. The incompleteness of information represents a huge constraint for both hospitals and scientists. In hospitals, any missing or error in patients' records could lead to irreversible consequences to patients such as a patient being treated with the wrong medication.
+
+\vspace{0.5cm}
+Moreover, tracking the patient in the long term is difficult as the patient might resort to other health services. For example, the patient could switch to a different provider or insurer or they could have gone to another country.
+
+\vspace{0.5cm}
+These limitations make the current data in the healthcare domain very limited making it difficult for researchers and healthcare professionals to perform comprehensive data analysis.
+
+
+
+\section{Existing State-of-the-Art Approaches in Generating Synthetic Data}
+\label{sec:ExistingStateOfTheArtApproaches}
+
+Several state-of-the-art approaches exist in generating synthetic data. Models like Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) are examples.
+
+
+
+\section{Large Language Models as a Powerful Tool for Generating Synthetic Data}
+\label{sec:IntroductionLLMs}
+
+%%%%%%%%%%%%%%%%%%%% LLM DEFINITION %%%%%%%%%%%%%%%%%%%%%%%%%%
+Large Language Models (LLMs) have emerged as a powerful tool for generating synthetic data based on the user request. A LLM is a form of artificial intelligence algorithm trained on numerous large datasets encompassing a wide range of topics and linguistic features. They are capable of generating texts based on what the user asks for, thus they are also capable of producing relevant information that mimics real-world data. 
+
+\vspace{0.5cm}
+%%%%%%%%%%%%%%%%% EXAMPLES OF APPLICATION %%%%%%%%%%%%%%%%%%%%
+They can be used, in particular, for data augmentation, which can augment existing patient datasets allowing researchers and healthcare professionals to conduct more comprehensive studies.
+Additionally, they are used for bias mitigation which helps mitigate biases present in traditional datasets. For example, they can generate data that balances underrepresented patient populations, resulting in a more representative way of conducting experiments and analysis.
+They also keep patients' data private as synthetic data does not correspond to real individuals' data. Thus, LLMs can address privacy concerns and compliance with regulations like HIPPA. This means that researchers can perform scientific analysis and experiments on the synthetic data without needing to worry about patient confidentiality.
+
+One another aspect that LLMs can provide is creating scenarios. In fact, it is possible to imagine scenarios where bad events such as pandemics could happen so healthcare professionals and researchers know how to cure and act in the most efficient way. This could also allow for training medical students and professionals, allowing them to practice diagnosing and treating various hypothetical cases in a risk-free environment.
+
+
+\section{Existing Research on LLMs for Data Generation}
+\label{sec:ExisitingResearchLLMs}
+
+% Briefly reviews existing research on LLMs for data generation.
+
+LLMs offer various benefits that make it possible to generate realistic synthetic data. 
+
+\begin{itemize}
+    \item[1.] \textsc{Versatility and flexibility}\\
+    LLMs can generate data for diverse fields such as healthcare, finance, marketing, and more. Thus, making them suitable for generating data in the healthcare domain. They can produce responses in a specific format and multiple languages. Additionally, they can change the writing style and tone of how sentences are formulated, thus resulting in more personalised information.
+
+    \item[2.] \textsc{Quality}\\
+    LLMs can provide relatively high-quality data depending on how well they perform. As a matter of fact, they are trained on several billion parameters; the more parameters the model is trained, the better the model will perform. LLMs trained on several billion parameters can grasp the context over long passages resulting in coherent accurate data. 
+
+    \item[3.] \textsc{Scalability}\\
+    LLMs can process very long requests and quickly produce a large volume of data. 
+
+    \item[4.] \textsc{Ethical and privacy considerations}\\
+    LLMs help generate data that mitigate privacy concerns by providing anonymized data. Researchers can use the generated data to study.
+
+\end{itemize}
