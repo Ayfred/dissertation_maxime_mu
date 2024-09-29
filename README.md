@@ -1,1 +1,1 @@
-# Maxime Mu Dissertation 2024 Trinity College Dublin
+# Dissertation 2024 Trinity College Dublin
